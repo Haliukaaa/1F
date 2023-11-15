@@ -1,0 +1,54 @@
+form {
+    margin: 150px auto;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: ;
+}
+.container-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.text, .password, .email, .number {
+    width: 350px;
+    height: 25px;
+}
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.checkbox-square {
+    width: 45px;
+    height: 45px;
+    display: flex;
+}
+.button {
+    width: 350px;
+    height: 25px;
+}
+.container-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+}
+.radio-cotnainer {
+    display: flex;
+    align-items: center;
+}
+.yes, .no {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px;
+  border: 5px;
+}

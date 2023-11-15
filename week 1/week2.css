@@ -1,0 +1,35 @@
+body {
+    margin: 50px 50px;
+}
+.zero {
+    border: black solid 5px;
+    border-radius: 6%;
+    width: 400px;
+}
+.one {
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+    border-width: 10px 8px 6px 4px;
+    border-color: red green purple blue;
+    margin: 50px auto;
+}
+.two {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    border-color: orange green purple blue;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 70% 10%;
+    background-color: yellowgreen;
+}
+.stalk {
+    width: 40px;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    top: 364px;
+    left: 350px;
+    rotate: -50deg;
+}
