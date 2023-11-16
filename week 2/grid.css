@@ -165,8 +165,9 @@ img {
 }
 .screen {
   max-width: 250%;
-  position: relative;
-  left: -65%;
+  position: absolute;
+  left: -17%;
+  top: 81.5%;
 }
 .floppy {
   width: 50%;
@@ -323,8 +324,9 @@ img {
   }
   .screen {
   max-width: 250%;
-  position: relative;
-  left: -50%;
+  position: absolute;
+  left: -25%;
+  top: 77%;
 }
   .neg {
     grid-column: 1;
