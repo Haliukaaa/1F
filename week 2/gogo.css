@@ -110,8 +110,6 @@ img {
   .navbar {
     height: 5vh;
   }
-  .story {
-  }
   .lifestyle {
     gap: 20px;
   }
@@ -143,15 +141,11 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 50px;
   }
-  .headline {
-  }
   .content1 {
     display: none;
   }
   .content2 {
     width: 100%;
-  }
-  .story {
   }
   .lifestyle {
     gap: 20px;
