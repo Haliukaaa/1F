@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./gogo.css" />
     <title>GoGo</title>
   </head>
-  <body>
-    <div class="main">
+  <body class="flex flex-center">
+    <div class="main flex-column flex-center">
+      <!-- NAVBAR -->
       <div class="navbar margin-top-30 flex">
         <div class="nav-menu flex">
           <a href="https://gogo.mn/" target="_blank"
@@ -44,76 +45,196 @@
           <div>Валютын ханш</div>
         </div>
       </div>
+      <!-- SECTION 1 -->
       <div class="headline flex-column flex-center radius-10">
-        <div class="content1 radius-10"></div>
-        <div class="content2 radius-10">
-          <img
-            class="radius-10"
-            src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/312848-16112023-1700118758-1247219865-epilyepsi_21.jpg"
-            alt="epilepsy person"
-          />
+        <div class="head-content-top flex">
+          <div class="content1 radius-10 flex-column">
+            <a class="tag-button deco-none" href="https://gogo.mn/i/9623"
+              >Нийгэм</a
+            >
+            <a class="content1-text deco-none" href="https://gogo.mn/r/x5gmv">
+              <h2>
+                "Манай төвөөр өдөрт 90-100 жолооч үйлчлүүлж байгаагаас 30 орчим
+                нь л RFID наалгаж байна"
+              </h2>
+              <p>
+                Тээврийн хэрэгслийн цахим гэрчилгээг харьяалал харгалзахгүй, үнэ
+                төлбөргүй наах ажлыг эхлүүлсэн хэмээн Нийслэл Улаанбаатар хотын
+                авто замын түгжрэлийг бууруулах үндэсний хорооноос мэдэгдсэн.
+              </p>
+            </a>
+            <div class="flex head-social">
+              <div>46</div>
+              <div>
+                <img src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg" alt="comments">
+                8</div>
+            </div>
+          </div>
+          <div class="content2 radius-10">
+            <img
+              class="radius-10"
+              src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/313055-20112023-1700465213-24749230-RFID_tsahim_gerchilgee_(10)1.jpg"
+              alt="idk someone taking a picture on their phone"
+            />
+          </div>
         </div>
-        <div class="head-content flex-column">
+        <div class="head-content-bottom">
+          <div class="head-content flex-column">
             <div class="head-content-img">
-                <img class="radius-7" src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/312976-17112023-1700189189-625844379-tuuli.jpg" alt="">
+              <img
+                class="radius-7"
+                src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313038-20112023-1700446640-562705506-denjiin_maynga10-134903-2973593571.jpeg"
+                alt="someone carrying a sack"
+              />
+              <p>
+                СУРВАЛЖИЛГА: Мах авахдаа гарал үүслийн гэрчилгээг нь шалгаж
+                дадвал антибиотикийн даслаас сэргийлэх боломжтой
+              </p>
             </div>
             <div class="head-content-text"></div>
-        </div>
-        <div class="head-content flex-column">
+          </div>
+          <div class="head-content flex-column">
             <div class="head-content-img">
-                <img class="radius-7" src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/312979-17112023-1700191880-1628141065-bohir_hudag_16-112953-2310224251.jpeg" alt="">
+              <img
+                class="radius-7"
+                src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313028-20112023-1700422041-343556142-%D1%85%D0%B8%D0%BB.jpeg"
+                alt="i forgot what img it was"
+              />
+              <div class="head-content-text">
+                <p>Игорь: Америк хүрэх зам амар байгаагүй</p>
+              </div>
             </div>
             <div class="head-content-text"></div>
-        </div>
-        <div class="head-content flex-column">
+          </div>
+          <div class="head-content flex-column">
             <div class="head-content-img">
-                <img class="radius-7" src="https://mgl.gogo.mn/newsn/thumbnail/600/images/ck/2016/06/01/saihanbileg-201703-1696020750.jpeg" alt="">
+              <img
+                class="radius-7"
+                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/-20112023-1700443963-380859083-600x1250.jpg"
+                alt=""
+              />
+              <div class="head-content-text"></div>
             </div>
-            <div class="head-content-text"></div>
-        </div>
-        <div class="head-content flex-column">
+            <div class="head-content-text">
+              <p>Таны нэгж, дата авсан мөнгө юунд зарцуулагддаг вэ?</p>
+            </div>
+          </div>
+          <div class="head-content flex-column">
             <div class="head-content-img">
-                <iframe class="radius-7" src="https://bn.gogo.mn/news-b2/255/262/bn.html" frameborder="0"></iframe>
+              <iframe
+                class="radius-7"
+                src="https://bn.gogo.mn/news-b2/255/262/bn.html"
+                frameborder="0"
+              ></iframe>
             </div>
-        </div>
+          </div>
         </div>
       </div>
-      <div class="story flex-column">
-        <div class="stories"></div>
-        <div class="news"></div>
+      <!-- SECTION 2 -->
+      <div class="story">
+        <ul class="stories flex">
+          <li class="story-content">
+            <div class="hover-box">
+              <p>Игорь: Америк хүрэх зам амар байгаагүй</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/map-033250-1138033173-655b331fb0776192787773.jpeg" alt="map">
+            </div>
+          </li>
+          <li class="story-content">
+            <div class="hover-box">
+              <p>ФОТО: Элчин сайд Кобаяши Хироюкид МУИС-ийн "Хүндэт доктор" цол олголоо</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/kobayashi-hiroyuki-hundet-doktor-3-1-655b32d40b67c073023696.jpg" alt="japanese person">
+            </div>
+          </li>
+          <li class="story-content">
+            <div class="hover-box">
+              <p>ФОТО: Никарагуа улсын гоо бүсгүй “Miss Universe” тэмцээнд түрүүллээ</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/sp3-655af6f9a8098807396874.jpg" alt="miss universe">
+            </div>
+          </li>
+          <li class="story-content">
+            <div class="hover-box">
+              <p>https://gogo.mn/r/0j6o2</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/tuuli1-6557086b390d8174291690.jpg" alt="throat singing">
+            </div>
+          </li>
+          <li class="story-content">
+            <div class="hover-box">
+              <p>Ууланд амиа алдсан эзнийхээ хажуугаас холдолгүй 70 хоносон нохой</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/dog1-101927-1810884836-65570817a6e23615258249.jpeg" alt="a pet dog">
+            </div>
+          </li>
+          <li class="story-content">
+            <div class="hover-box">
+              <p>Дархан-Уул аймагт барьж буй спорт цогцолборын барилга угсралт бүрэн дуусжээ</p>
+            </div>
+            <div class="hover-img">
+              <img src="https://mgl.gogo.mn/newsn/story/312917-15112023-1700050798-1205349027-2511-39261b72-423a-406f-a4da-a22c138ee8b8-6555f8db072f2482192392.jpeg" alt="factory of sorts">
+            </div>
+          </li>
+        </ul>
+        <div class="news flex-column">
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+          <div class="news-content"></div>
+        </div>
         <div class="sidebar">
           <div class="sidebar-highlight"></div>
           <div class="sidebar-trending"></div>
         </div>
       </div>
-      <div class="disc-vid discussion flex-column flex-center">
+      <!-- SECTION 3 -->
+      <div class="discussion flex-column flex-center">
         <div class="disc-content1"></div>
         <div class="disc-content"></div>
         <div class="disc-content"></div>
         <div class="disc-content"></div>
         <div class="disc-content"></div>
       </div>
-      <div class="lifestyle">
-        <div class="lifestyle-random">
+      <!-- SECTION 4 -->
+      <div class="lifestyle flex-column space-between">
+        <div class="lifestyle-random flex space-between">
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
         </div>
-        <div class="lifestyle-tech">
+        <div class="lifestyle-tech flex space-between">
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
         </div>
-        <div class="lifestyle-comic">
+        <div class="lifestyle-comic flex space-between">
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
           <div class="lifestyle-content"></div>
         </div>
       </div>
-      <div class="disc-vid video flex-column flex-center">
+      <!-- SECTION 5 -->
+      <div class="video flex-column flex-center">
         <div class="video-content"></div>
         <div class="video-content"></div>
         <div class="video-content"></div>
