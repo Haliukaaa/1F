@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./gogo.css" />
     <title>GoGo</title>
   </head>
-  <body class="flex flex-center">
-    <div class="main flex-column flex-center">
+  <body>
+    <div class="main">
       <!-- NAVBAR -->
       <div class="navbar margin-top-30 flex">
         <div class="nav-menu flex">
@@ -17,7 +17,7 @@
               src="https://mgl.gogo.mn/newsn/v4/images/gogo-logo.345096b3.png"
               alt="gogo logo"
           /></a>
-          <ul class="nav-menu-ul flex">
+          <ul class="nav-menu-ul flex list-style-none">
             <li class="nav-menu-li">Мэдээ</li>
             <li class="nav-menu-li">GoGo булан</li>
             <li class="nav-menu-li">Үзэх</li>
@@ -39,40 +39,57 @@
             </li>
           </ul>
         </div>
-        <div class="nav-stat flex">
+        <div class="nav-stat flex gap-20">
           <div>Цаг агаар</div>
           <div>Зурхай</div>
           <div>Валютын ханш</div>
         </div>
       </div>
       <!-- SECTION 1 -->
-      <div class="headline flex-column flex-center radius-10">
+      <div
+        class="headline flex-column space-between radius-10 padding-bottom-30"
+      >
         <div class="head-content-top flex">
           <div class="content1 radius-10 flex-column">
             <a class="tag-button deco-none" href="https://gogo.mn/i/9623"
               >Нийгэм</a
             >
             <a class="content1-text deco-none" href="https://gogo.mn/r/x5gmv">
-              <h2>
+              <h2 class="black bold padding-bottom-30 headline-h2">
                 "Манай төвөөр өдөрт 90-100 жолооч үйлчлүүлж байгаагаас 30 орчим
                 нь л RFID наалгаж байна"
               </h2>
-              <p>
+              <p class="light-grey">
                 Тээврийн хэрэгслийн цахим гэрчилгээг харьяалал харгалзахгүй, үнэ
                 төлбөргүй наах ажлыг эхлүүлсэн хэмээн Нийслэл Улаанбаатар хотын
                 авто замын түгжрэлийг бууруулах үндэсний хорооноос мэдэгдсэн.
               </p>
             </a>
-            <div class="flex head-social">
-              <div>46</div>
-              <div>
-                <img src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg" alt="comments">
-                8</div>
+            <div class="flex head-social gap-20">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
           </div>
           <div class="content2 radius-10">
             <img
-              class="radius-10"
+              class="img-100-100 radius-10"
               src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/313055-20112023-1700465213-24749230-RFID_tsahim_gerchilgee_(10)1.jpg"
               alt="idk someone taking a picture on their phone"
             />
@@ -82,47 +99,111 @@
           <div class="head-content flex-column">
             <div class="head-content-img">
               <img
-                class="radius-7"
+                class="radius-7 img-100-100"
                 src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313038-20112023-1700446640-562705506-denjiin_maynga10-134903-2973593571.jpeg"
                 alt="someone carrying a sack"
               />
-              <p>
+            </div>
+            <div class="head-content-text">
+              <p class="bold">
                 СУРВАЛЖИЛГА: Мах авахдаа гарал үүслийн гэрчилгээг нь шалгаж
                 дадвал антибиотикийн даслаас сэргийлэх боломжтой
               </p>
+              <div class="flex head-social">
+                <div class="flex flex-center gap-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                    />
+                  </svg>
+                  <p>46</p>
+                </div>
+                <div class="flex flex-center gap-5">
+                  <img
+                    src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                    alt="comments"
+                  />
+                  <p>8</p>
+                </div>
+              </div>
             </div>
-            <div class="head-content-text"></div>
           </div>
           <div class="head-content flex-column">
             <div class="head-content-img">
               <img
-                class="radius-7"
+                class="radius-7 img-100-100"
                 src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313028-20112023-1700422041-343556142-%D1%85%D0%B8%D0%BB.jpeg"
                 alt="i forgot what img it was"
               />
-              <div class="head-content-text">
-                <p>Игорь: Америк хүрэх зам амар байгаагүй</p>
+            </div>
+            <div class="head-content-text">
+              <p class="bold">Игорь: Америк хүрэх зам амар байгаагүй</p>
+              <div class="flex head-social">
+                <div class="flex flex-center gap-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                    />
+                  </svg>
+                  <p>46</p>
+                </div>
+                <div class="flex flex-center gap-5">
+                  <img
+                    src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                    alt="comments"
+                  />
+                  <p>8</p>
+                </div>
               </div>
             </div>
-            <div class="head-content-text"></div>
           </div>
           <div class="head-content flex-column">
             <div class="head-content-img">
               <img
-                class="radius-7"
+                class="radius-7 img-100-100"
                 src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/-20112023-1700443963-380859083-600x1250.jpg"
                 alt=""
               />
-              <div class="head-content-text"></div>
             </div>
             <div class="head-content-text">
-              <p>Таны нэгж, дата авсан мөнгө юунд зарцуулагддаг вэ?</p>
+              <p class="bold">
+                Таны нэгж, дата авсан мөнгө юунд зарцуулагддаг вэ?
+              </p>
+              <div class="flex head-social">
+                <div class="flex flex-center gap-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                    />
+                  </svg>
+                  <p>46</p>
+                </div>
+                <div class="flex flex-center gap-5">
+                  <img
+                    src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                    alt="comments"
+                  />
+                  <p>8</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="head-content flex-column">
             <div class="head-content-img">
               <iframe
-                class="radius-7"
+                class="radius-7 img-100-100"
                 src="https://bn.gogo.mn/news-b2/255/262/bn.html"
                 frameborder="0"
               ></iframe>
@@ -131,73 +212,741 @@
         </div>
       </div>
       <!-- SECTION 2 -->
-      <div class="story">
-        <ul class="stories flex">
+      <div class="story margin-top-40">
+        <ul class="stories flex list-style-none white">
           <li class="story-content">
-            <div class="hover-box">
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-text absolute">
               <p>Игорь: Америк хүрэх зам амар байгаагүй</p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/map-033250-1138033173-655b331fb0776192787773.jpeg" alt="map">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
           <li class="story-content">
-            <div class="hover-box">
-              <p>ФОТО: Элчин сайд Кобаяши Хироюкид МУИС-ийн "Хүндэт доктор" цол олголоо</p>
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-logo absolute"></div>
+            <div class="hover-text absolute">
+              <p>
+                ФОТО: Элчин сайд Кобаяши Хироюкид МУИС-ийн "Хүндэт доктор" цол
+                олголоо
+              </p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/kobayashi-hiroyuki-hundet-doktor-3-1-655b32d40b67c073023696.jpg" alt="japanese person">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
           <li class="story-content">
-            <div class="hover-box">
-              <p>ФОТО: Никарагуа улсын гоо бүсгүй “Miss Universe” тэмцээнд түрүүллээ</p>
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-logo absolute"></div>
+            <div class="hover-text absolute">
+              <p>
+                ФОТО: Никарагуа улсын гоо бүсгүй “Miss Universe” тэмцээнд
+                түрүүллээ
+              </p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/sp3-655af6f9a8098807396874.jpg" alt="miss universe">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
           <li class="story-content">
-            <div class="hover-box">
-              <p>https://gogo.mn/r/0j6o2</p>
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-logo absolute"></div>
+            <div class="hover-text absolute">
+              <p>
+                ФОТО: Никарагу а улсын гоо бүсгүй “Miss Universe” тэмцээнд
+                түрүүллээ
+              </p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/tuuli1-6557086b390d8174291690.jpg" alt="throat singing">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
           <li class="story-content">
-            <div class="hover-box">
-              <p>Ууланд амиа алдсан эзнийхээ хажуугаас холдолгүй 70 хоносон нохой</p>
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-logo absolute"></div>
+            <div class="hover-text absolute">
+              <p>
+                Ууланд амиа алдсан эзнийхээ хажуугаас холдолгүй 70 хоносон нохой
+              </p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/dog1-101927-1810884836-65570817a6e23615258249.jpeg" alt="a pet dog">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
           <li class="story-content">
-            <div class="hover-box">
-              <p>Дархан-Уул аймагт барьж буй спорт цогцолборын барилга угсралт бүрэн дуусжээ</p>
+            <div class="hover-box radius-7 absolute"></div>
+            <div class="hover-logo absolute"></div>
+            <div class="hover-text absolute">
+              <p>
+                Дархан-Уул аймагт барьж буй спорт цогцолборын барилга угсралт
+                бүрэн дуусжээ
+              </p>
             </div>
-            <div class="hover-img">
-              <img src="https://mgl.gogo.mn/newsn/story/312917-15112023-1700050798-1205349027-2511-39261b72-423a-406f-a4da-a22c138ee8b8-6555f8db072f2482192392.jpeg" alt="factory of sorts">
+            <div class="flex hover-social absolute">
+              <div class="flex flex-center gap-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                  />
+                </svg>
+                <p>46</p>
+              </div>
+              <div class="flex flex-center gap-5">
+                <img
+                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                  alt="comments"
+                />
+                <p>8</p>
+              </div>
             </div>
+            <div class="hover-img radius-7"></div>
           </li>
         </ul>
-        <div class="news flex-column">
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
-          <div class="news-content"></div>
+        <div class="news flex-column margin-top-40">
+          <div class="news-top flex-column gap-10">
+            <div class="news-title">
+              <h2 class="blue">Өнөөдөр 🌱</h2>
+            </div>
+            <div class="news-dates-menu flex gap-10">
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 21</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 22</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 23</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 24</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 25</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="news-date flex-column flex-center">
+                  <div class="date-box radius-7"></div>
+                  <p class="date-text light-grey2 font-size-s font-weight-300">11 сарын 26</p>
+                </div>
+              </a>
+              <a href="#" class="deco-none">
+                <div class="dot-box radius-7 flex flex-center">
+                  <div class="dot circle"></div>
+                  <div class="dot circle"></div>
+                  <div class="dot circle"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="news-bottom gap-30 flex-column margin-top-40">
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="https://gogo.mn/r/0j641" class="deco-none"
+              ><div class="news-content flex gap-30">
+                <div class="news-img">
+                  <img
+                    class="img-100-100 radius-7"
+                    src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2023/11/313104-21112023-1700554709-880327228-barilga_suuri.jpg"
+                    alt="idk sda"
+                  />
+                </div>
+                <div class="news-text flex-column">
+                  <h2 class="news-h2 black">
+                    Барилгын суурь хэтрүүлж ухсан зөрчлийг арилгуулна
+                  </h2>
+                  <p class="light-grey">
+                    Хан-Уул дүүргийн хоёрдугаар хорооны Нэхмэлийн шар байрнуудын
+                    дахин төлөвлөлтийн төслийг “Фүжи Девелопмент” ХХК
+                  </p>
+                  <div class="flex news-social gap-20">
+                    <div class="flex flex-center gap-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                      </svg>
+                      <p class="light-grey">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="light-grey">8</p>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
         </div>
         <div class="sidebar">
           <div class="sidebar-highlight"></div>
