@@ -17,7 +17,7 @@
               src="https://mgl.gogo.mn/newsn/v4/images/gogo-logo.345096b3.png"
               alt="gogo logo"
           /></a>
-          <ul class="nav-menu-ul flex list-style-none">
+          <ul class="nav-menu-ul flex list-style-none display-none">
             <li class="nav-menu-li">Мэдээ</li>
             <li class="nav-menu-li">GoGo булан</li>
             <li class="nav-menu-li">Үзэх</li>
@@ -40,9 +40,9 @@
           </ul>
         </div>
         <div class="nav-stat flex gap-20">
-          <div>Цаг агаар</div>
-          <div>Зурхай</div>
-          <div>Валютын ханш</div>
+          <div class="border-thin-960 flex flex-center">Цаг агаар</div>
+          <div class="border-thin-960 flex flex-center">Зурхай</div>
+          <div class="border-thin-960 flex flex-center">Валютын ханш</div>
         </div>
       </div>
       <!-- SECTION 1 -->
@@ -59,7 +59,7 @@
                 "Манай төвөөр өдөрт 90-100 жолооч үйлчлүүлж байгаагаас 30 орчим
                 нь л RFID наалгаж байна"
               </h2>
-              <p class="light-grey">
+              <p class="light-grey display-none">
                 Тээврийн хэрэгслийн цахим гэрчилгээг харьяалал харгалзахгүй, үнэ
                 төлбөргүй наах ажлыг эхлүүлсэн хэмээн Нийслэл Улаанбаатар хотын
                 авто замын түгжрэлийг бууруулах үндэсний хорооноос мэдэгдсэн.
@@ -67,7 +67,7 @@
             </a>
             <div class="flex head-social gap-20">
               <div class="flex flex-center gap-5">
-                <svg
+                <svg class="fill-white-960"
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
                   viewBox="0 0 512 512"
@@ -76,14 +76,14 @@
                     d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                   />
                 </svg>
-                <p>46</p>
+                <p class="white-960">46</p>
               </div>
               <div class="flex flex-center gap-5">
                 <img
                   src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
                   alt="comments"
                 />
-                <p>8</p>
+                <p class="white-960">8</p>
               </div>
             </div>
           </div>
@@ -94,8 +94,13 @@
               alt="idk someone taking a picture on their phone"
             />
           </div>
+          <div class="headline-bar flex opacity-0 overflow-hidden">
+            <div class="bar-menu height-100 blackish-bg white bold flex flex-center">🌳 Онцлох</div>
+            <div class="bar-menu height-100 blackish-bg white bold flex flex-center">🌱 Шинэ</div>
+            <div class="bar-menu height-100 blackish-bg white bold flex flex-center">🔥 Трэнд</div>
         </div>
-        <div class="head-content-bottom">
+        </div>
+        <div class="head-content-bottom display-none">
           <div class="head-content flex-column">
             <div class="head-content-img">
               <img
@@ -109,7 +114,7 @@
                 СУРВАЛЖИЛГА: Мах авахдаа гарал үүслийн гэрчилгээг нь шалгаж
                 дадвал антибиотикийн даслаас сэргийлэх боломжтой
               </p>
-              <div class="flex head-social">
+              <div class="flex head-social gap-20">
                 <div class="flex flex-center gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +147,7 @@
             </div>
             <div class="head-content-text">
               <p class="bold">Игорь: Америк хүрэх зам амар байгаагүй</p>
-              <div class="flex head-social">
+              <div class="flex head-social gap-20">
                 <div class="flex flex-center gap-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -212,204 +217,192 @@
         </div>
       </div>
       <!-- SECTION 2 -->
-      <div class="story margin-top-40">
-        <ul class="stories flex list-style-none white">
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-text absolute">
-              <p>Игорь: Америк хүрэх зам амар байгаагүй</p>
+      <div class="story margin-top-40 flex-column gap-20 margin-bottom-90">
+        <div class="lifestyle-title margin-bottom-15 flex align-center gap-10">
+            <h2>GoGo</h2>
+            <div
+              class="light-blue-bg white padding-4 radius-4 font-size-18 bold regular-960"
+            >
+              хэв маяг
             </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+          </div>
+        <div class="story-container">
+          <!-- STORY -->
+        <div class="stories">
+          <div class="slider width-100 height-100">
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-logo absolute"></div>
-            <div class="hover-text absolute">
-              <p>
-                ФОТО: Элчин сайд Кобаяши Хироюкид МУИС-ийн "Хүндэт доктор" цол
-                олголоо
-              </p>
-            </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-logo absolute"></div>
-            <div class="hover-text absolute">
-              <p>
-                ФОТО: Никарагуа улсын гоо бүсгүй “Miss Universe” тэмцээнд
-                түрүүллээ
-              </p>
-            </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-logo absolute"></div>
-            <div class="hover-text absolute">
-              <p>
-                ФОТО: Никарагу а улсын гоо бүсгүй “Miss Universe” тэмцээнд
-                түрүүллээ
-              </p>
-            </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden display-none">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-logo absolute"></div>
-            <div class="hover-text absolute">
-              <p>
-                Ууланд амиа алдсан эзнийхээ хажуугаас холдолгүй 70 хоносон нохой
-              </p>
-            </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden display-none">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-          <li class="story-content">
-            <div class="hover-box radius-7 absolute"></div>
-            <div class="hover-logo absolute"></div>
-            <div class="hover-text absolute">
-              <p>
-                Дархан-Уул аймагт барьж буй спорт цогцолборын барилга угсралт
-                бүрэн дуусжээ
-              </p>
-            </div>
-            <div class="flex hover-social absolute">
-              <div class="flex flex-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                  />
-                </svg>
-                <p>46</p>
+            <div class="story-content relative radius-7 height-100 width-100 overflow-hidden display-none">
+              <div class="hover-text absolute overflow-hidden index-2 padding-left-8">
+                <p class="white">Blackpink хамтлагийнхан Их Британийн хаанаас өргөмжлөл хүртлээ</p>
               </div>
-              <div class="flex flex-center gap-5">
-                <img
-                  src="https://mgl.gogo.mn/newsn/v4/images/comment-light.bd31b019.svg"
-                  alt="comments"
-                />
-                <p>8</p>
+              <div class="flex hover-social absolute index-3 gap-10 padding-left-8">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 512 512"
+                      ><path
+                          d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                        />
+                    </svg>
+                    <p class="white">46</p>
+                    </div>
+                    <div class="flex flex-center gap-5">
+                      <img
+                        src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                        alt="comments"
+                      />
+                      <p class="white">8</p>
+                    </div>
               </div>
+              <div class="hover-box radius-7 absolute gradient-bg index-1 height-100 width-100"></div>
+              <img class="img-100-100 radius-7 hover-img" src="https://mgl.gogo.mn/newsn/story/blck-655ebec106d98855511145.jpg" alt="idk">
             </div>
-            <div class="hover-img radius-7"></div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <!-- NEWS -->
         <div
           class="news flex-column margin-top-40 padding-right-10 border-right align-start"
         >
           <div class="news-top flex-column gap-10">
-            <div class="news-title">
+            <div class="news-title display-none">
               <h2 class="blue">Өнөөдөр 🌱</h2>
             </div>
-            <div class="news-dates-menu flex gap-10">
+            <div class="news-dates-menu flex gap-10 display-none">
               <a href="#" class="deco-none">
                 <div class="news-date flex-column flex-center">
                   <div class="date-box radius-7"></div>
@@ -1167,6 +1160,7 @@
             </div>
           </div>
         </div>
+        <!-- SIDEBAR -->
         <div class="sidebar margin-top-40 flex-column">
           <div class="sidebar-highlight padding-left-40">
             <div class="sidebar-title">
@@ -1657,6 +1651,7 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       <!-- SECTION 3 -->
       <div class="discussion flex-column flex-center gap-30">
@@ -1792,10 +1787,10 @@
       <!-- SECTION 4 -->
       <div class="lifestyle flex-column margin-top-60 gap-50 margin-bottom-90">
         <div class="lifestyle-random flex-column space-between">
-          <div class="lifestyle-title margin-bottom-15 flex align-center gap-1">
+          <div class="lifestyle-title margin-bottom-15 flex align-center gap-10">
             <h2>GoGo</h2>
             <div
-              class="light-blue-bg white padding-4 radius-4 font-size-18 bold"
+              class="light-blue-bg white padding-4 radius-4 font-size-18 bold regular-960"
             >
               хэв маяг
             </div>
@@ -1934,7 +1929,7 @@
               </div>
             </div>
             <div
-              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100"
+              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100 display-none"
             >
               <div class="lifestyle-img overflow-hidden width-100 relative">
                 <div
@@ -2007,7 +2002,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2051,7 +2046,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2095,7 +2090,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2117,7 +2112,7 @@
               </div>
             </div>
             <div
-              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100"
+              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100 display-none"
             >
               <div class="lifestyle-img overflow-hidden width-100 relative">
                 <div
@@ -2139,7 +2134,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2190,7 +2185,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2234,7 +2229,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2278,7 +2273,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2300,7 +2295,7 @@
               </div>
             </div>
             <div
-              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100"
+              class="lifestyle-content radius-7 border-thin flex-column overflow-hidden width-100 display-none"
             >
               <div class="lifestyle-img overflow-hidden width-100 relative">
                 <div
@@ -2322,7 +2317,7 @@
                 <hr class="border-thin-top2 width-100" />
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="grey-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
@@ -2374,17 +2369,93 @@
                 </p>
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="white-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path
+                        d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                      />
+                    </svg>
+                    <p class="whitish">46</p>
+                  </div>
+                  <div class="flex flex-center gap-5">
+                    <img
+                      src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                      alt="comments"
+                    />
+                    <p class="whitish">8</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-content radius-7 overflow-hidden width-100">
+              <div class="video-img overflow-hidden width-100 relative">
+                <div
+                  class="hover-effect-news absolute flex flex-center radius-7 width-100"
+                >
+                  <p class="white font-size-18 bold opacity-0">Унших →</p>
+                </div>
+                <img
+                  class="img-100-100"
+                  src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/12/301445-22122022-1671699264-195633526-zandanshatar1.jpg"
+                  alt="idk"
+                />
+                <img class="absolute position-0" src="https://mgl.gogo.mn//newsn/v4/images/live-icon.4c327f2a.svg" alt="">
+              </div>
+              <div class="video-text flex-column gap-10 padding-4-15">
+                <p class="whitish">
+                  “Сурагчдыг 12, 1 сард амрааж, хичээлийн шинэ жилийг VIII/1-нд
+                  эхлүүлж болж байна, судлаарай”
+                </p>
+                <div class="flex news-social gap-20">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    ><path
+                        d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                      />
+                    </svg>
+                    <p class="whitish">46</p>
+                  </div>
+                  <div class="flex flex-center gap-5">
+                    <img
+                      src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
+                      alt="comments"
+                    />
+                    <p class="whitish">8</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-content radius-7 overflow-hidden width-100">
+              <div class="video-img overflow-hidden width-100 relative">
+                <div
+                  class="hover-effect-news absolute flex flex-center radius-7 width-100"
+                >
+                  <p class="white font-size-18 bold opacity-0">Унших →</p>
+                </div>
+                <img
+                  class="img-100-100"
+                  src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/12/301445-22122022-1671699264-195633526-zandanshatar1.jpg"
+                  alt="idk"
+                />
+                <img class="absolute position-0" src="https://mgl.gogo.mn//newsn/v4/images/live-icon.4c327f2a.svg" alt="">
+              </div>
+              <div class="video-text flex-column gap-10 padding-4-15">
+                <p class="whitish">
+                  “Сурагчдыг 12, 1 сард амрааж, хичээлийн шинэ жилийг VIII/1-нд
+                  эхлүүлж болж байна, судлаарай”
+                </p>
+                <div class="flex news-social gap-20">
+                  <div class="flex flex-center gap-5">
+                    <svg class="white-fill"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                    ><path
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2425,107 +2496,7 @@
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
-                        d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                      />
-                    </svg>
-                    <p class="whitish">46</p>
-                  </div>
-                  <div class="flex flex-center gap-5">
-                    <img
-                      src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
-                      alt="comments"
-                    />
-                    <p class="whitish">8</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="video-content radius-7 overflow-hidden width-100">
-              <div class="video-img overflow-hidden width-100 relative">
-                <div
-                  class="hover-effect-news absolute flex flex-center radius-7 width-100"
-                >
-                  <p class="white font-size-18 bold opacity-0">Унших →</p>
-                </div>
-                <img
-                  class="img-100-100"
-                  src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/12/301445-22122022-1671699264-195633526-zandanshatar1.jpg"
-                  alt="idk"
-                />
-                <img class="absolute position-0" src="https://mgl.gogo.mn//newsn/v4/images/live-icon.4c327f2a.svg" alt="">
-              </div>
-              <div class="video-text flex-column gap-10 padding-4-15">
-                <p class="whitish">
-                  “Сурагчдыг 12, 1 сард амрааж, хичээлийн шинэ жилийг VIII/1-нд
-                  эхлүүлж болж байна, судлаарай”
-                </p>
-                <div class="flex news-social gap-20">
-                  <div class="flex flex-center gap-5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
-                        d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
-                      />
-                    </svg>
-                    <p class="whitish">46</p>
-                  </div>
-                  <div class="flex flex-center gap-5">
-                    <img
-                      src="https://mgl.gogo.mn//newsn/v4/images/comment-light.bd31b019.svg"
-                      alt="comments"
-                    />
-                    <p class="whitish">8</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="video-content radius-7 overflow-hidden width-100">
-              <div class="video-img overflow-hidden width-100 relative">
-                <div
-                  class="hover-effect-news absolute flex flex-center radius-7 width-100"
-                >
-                  <p class="white font-size-18 bold opacity-0">Унших →</p>
-                </div>
-                <img
-                  class="img-100-100"
-                  src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/12/301445-22122022-1671699264-195633526-zandanshatar1.jpg"
-                  alt="idk"
-                />
-                <img class="absolute position-0" src="https://mgl.gogo.mn//newsn/v4/images/live-icon.4c327f2a.svg" alt="">
-              </div>
-              <div class="video-text flex-column gap-10 padding-4-15">
-                <p class="whitish">
-                  “Сурагчдыг 12, 1 сард амрааж, хичээлийн шинэ жилийг VIII/1-нд
-                  эхлүүлж болж байна, судлаарай”
-                </p>
-                <div class="flex news-social gap-20">
-                  <div class="flex flex-center gap-5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path class="white-fill"
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2564,17 +2535,11 @@
                 </p>
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="white-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2611,17 +2576,11 @@
                 </p>
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="white-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2658,17 +2617,11 @@
                 </p>
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="white-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2705,17 +2658,11 @@
                 </p>
                 <div class="flex news-social gap-20">
                   <div class="flex flex-center gap-5">
-                    <svg
+                    <svg class="white-fill"
                       xmlns="http://www.w3.org/2000/svg"
                       height="1em"
                       viewBox="0 0 512 512"
-                    >
-                      <style>
-                        svg {
-                          fill: hsla(0 , 0%, 100%, 0.8);
-                        }
-                      </style>
-                      <path
+                    ><path
                         d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
                       />
                     </svg>
@@ -2734,6 +2681,7 @@
           </div>
         </div>
       </div>
+      <!-- FOOTER -->
       <div class="footer flex-column margin-top-60 space-between">
         <div class="footer-top flex space-between align-center">
           <div class="footer-logo">
