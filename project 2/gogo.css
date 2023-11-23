@@ -583,6 +583,9 @@ svg {
     display: flex;
     flex-direction: column;
   }
+  .stories {
+
+  }
   .scale-105 {
     transform: scale(1.05);
   }
