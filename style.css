@@ -578,7 +578,7 @@ svg {
 }
 
 /* small screen media query here */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 330px) and (max-width: 480px) {
   .flex-column:not(.video) {
     display: flex;
     flex-direction: column;
