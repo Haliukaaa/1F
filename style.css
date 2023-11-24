@@ -583,9 +583,6 @@ svg {
     display: flex;
     flex-direction: column;
   }
-  .stories {
-
-  }
   .scale-105 {
     transform: scale(1.05);
   }
@@ -619,12 +616,7 @@ svg {
     background: linear-gradient(360deg, #00000093 10%, #00000000 40%);
     justify-content: flex-end;
     gap: 5px;
-    padding: 15px 0px 10px 15px;
-  }
-  .headline-h2 {
-    font-size: 14px;
-    line-height: 20px;
-    color: white;
+    padding: 10px 0px 5px 10px;
   }
   .content2,
   .content1 {
@@ -647,12 +639,24 @@ svg {
   .white-960 {
     color: #fff;
   }
+  .head-social {
+    transform: scale(0.9);
+  }
+  .tag-button {
+    transform: scale(0.9);
+  }
   .headline-bar {
     opacity: 1;
     width: 100%;
-    height: 10%;
-    top: 100%;
-    left: -0.5%;
+    height: 9%;
+    top: 90%;
+    left: 0;
+  }
+  .headline-h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 17px;
   }
   .bar-menu {
     width: 100%;
@@ -681,18 +685,25 @@ svg {
     display: none;
   }
   .story-container {
-    grid-template-rows: 5% 1fr;
+    grid-template-rows: 7% 1fr;
   }
   .news-h2 {
     font-weight: 400;
   }
   .hover-text {
     padding-left: 12px;
-    top: 74%;
+    top: 70%;
+    line-height: 14px;
+    font-size: 14px;
+    height: 16%;
   }
   .hover-social {
     padding-left: 12px;
-    top: 90%;
+    top: 86%;
+  }
+  .story-content:hover .hover-text {
+    transform: translateY(-50%);
+    height: 35%;
   }
   .news {
     grid-column: 1/3;
@@ -832,6 +843,23 @@ svg {
   .disc-hover-button {
     margin-bottom: 10px;
   }
+  .footer-list {
+    gap: 10px;
+  }
+  .font-size-16 {
+    font-size: 14px;
+  }
+  .footer-hr {
+    margin: 20px 0;;
+  }
+  .font-size-s {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .footer-info {
+    gap: 0;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 640px) {
   .flex-column:not(.video) {
@@ -871,7 +899,7 @@ svg {
     background: linear-gradient(360deg, #00000093 10%, #00000000 40%);
     justify-content: flex-end;
     gap: 5px;
-    padding: 15px 0px 10px 15px;
+    padding: 15px 0px 25px 15px;
   }
   .headline-h2 {
     font-size: 17px;
@@ -881,7 +909,7 @@ svg {
   .content2,
   .content1 {
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius: 0;
   }
   .content2 img {
@@ -903,8 +931,9 @@ svg {
     opacity: 1;
     width: 100%;
     height: 10%;
-    top: 100%;
-    left: -0.5%;
+    top: 96%;
+    left: 0;
+    z-index: 4;
   }
   .bar-menu {
     width: 100%;
@@ -1158,8 +1187,8 @@ svg {
     opacity: 1;
     width: 100%;
     height: 10%;
-    top: 100%;
-    left: -0.5%;
+    top: 90%;
+    left: 0;
   }
   .bar-menu {
     width: 100%;
@@ -1182,14 +1211,15 @@ svg {
   }
   .hover-text {
     padding-left: 10px;
-    top: 70%;
+    top: 74%;
+    height: 15%;
   }
   .hover-social {
     padding-left: 10px;
     top: 88%;
   }
   .story-content:hover .hover-text {
-    transform: translateY(-45%);
+    transform: translateY(-25%);
     height: 30%;
   }
   .news {
