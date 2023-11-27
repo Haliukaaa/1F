@@ -29,6 +29,9 @@ const notCar = true;
 const notTwelve = true;
 // alert("ene odoo yaaj ajillaad bganbe");
 
-let number = 643;
-console.log((number/10)/16);
-console.log(((number/100)-0.43) + ((number%100)%4) + ((number/10)/16));
+console.log("-------------------------------");
+let number = 495;
+let thirdDigit = number % 10;
+let secondDigit = Math.floor((number/10)%10);
+let firstDigit = Math.floor(number/100);
+console.log(firstDigit + secondDigit + thirdDigit);

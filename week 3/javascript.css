@@ -1,7 +1,6 @@
 button {
-    width: 10%;
-    padding: 2rem minmax(1rem, 2rem);
-    font-size: 16px;
+    padding: minmax(1em, 2em);
+    font-size: minmax(12px, 16px);
     color: rgb(52, 52, 147);
     border: 1px solid rgb(139, 139, 255);
     background: rgb(203, 203, 255);
