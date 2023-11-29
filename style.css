@@ -145,16 +145,18 @@
   width: 250px;
   height: 250px;
   background-color: pink;
-  transition: border-radius 4s linear, rotate 1s ease-in-out,
-    background-color 1s ease-in, border 2s ease, scale 3s ease, height 3s ease;
+  transition: border-radius 1s linear, rotate 1s ease-in-out,
+    background-color 700ms ease-in, border 700ms ease;
 }
 .durs:hover {
   border-radius: 50%;
   rotate: 360deg;
   background-color: cornflowerblue;
   border: 10px dotted aquamarine;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
+  transition: border-radius 1s linear, rotate 2s ease-in-out,
+    background-color 700ms ease-in, border 700ms ease;
 }
 .duruw {
   grid-row: 2;
@@ -322,8 +324,7 @@ ul {
   animation: loading 1.5s forwards infinite linear, colors3 1.5s infinite;
 }
 .shit4 {
-  animation: loading 1.5s forwards infinite linear,
-    colors4 1.5s infinite linear;
+  animation: loading 1.5s forwards infinite linear, colors4 1.5s infinite linear;
 }
 .delay1 {
   animation-delay: 100ms;
