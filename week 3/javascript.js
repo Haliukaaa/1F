@@ -194,6 +194,15 @@ switch (person) {
     clockedIn = "Iim hun bhgue, hugshuuuun ZAAAIIILLLL";
     break;
 };
-
 console.log(clockedIn);
+
+
+let Nas = 21;
+let message = Nas >= 18 ? "You are of legal age" : "You are a minor";
+
+console.log(message);
+
+let isApproved = Nas >= 21 ? true : false;
+
+console.log("Is approved for drinking: " + isApproved);
 
