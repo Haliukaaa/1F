@@ -87,15 +87,20 @@
 }
 .button {
   background-color: green;
-  width: 250px;
+  width: 200px;
   height: 100px;
-  position: absolute;
-  top: 800px;
   color: white;
   font-size: 2rem;
   border-radius: 20px;
   border: none;
   transition: background-color 200ms linear, color 200ms linear;
+}
+.zurgaa {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .button:hover {
   background-color: yellowgreen;
@@ -130,8 +135,8 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 2;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .guraw {
   grid-column: 3;
@@ -155,8 +160,8 @@
   border: 10px dotted aquamarine;
   width: 250px;
   height: 250px;
-  transition: border-radius 1s linear, rotate 2s ease-in-out,
-    background-color 700ms ease-in, border 700ms ease;
+  transition: border-radius 2s linear, rotate 3s ease-in-out, border 2s ease;
+  animation: durschange 3s linear;
 }
 .duruw {
   grid-row: 2;
@@ -232,6 +237,98 @@ ul {
   display: flex;
 }
 
+.doloo {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+.ayga {
+  position: relative;
+}
+.container {
+  width: 160px;
+  height: 100px;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  background: rgb(220, 219, 219);
+  overflow: hidden;
+  z-index: 1;
+}
+.suuder {
+  width: 160px;
+  height: 100px;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  background: rgb(238, 238, 238);
+  transform: translateX(10%);
+  z-index: 0;
+}
+.bariul {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border-radius: 50%;
+  border: 10px solid rgb(238, 238, 238);
+  position: absolute;
+  top: 8%;
+  left: 95%;
+}
+.steam {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(248, 244, 240);
+  margin-left: 65px;
+  z-index: 0;
+  opacity: 1;
+}
+.coffee {
+  position: relative;
+}
+.ayga-suuri {
+  width: 200px;
+  height: 20px;
+  background: rgb(238, 238, 238);
+  position: absolute;
+  left: -9%;
+  top: 90%;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+}
+
+@keyframes steam1 {
+  0% {transform: translate(0) scale(0.35); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+}
+@keyframes steam2 {
+  0% {transform: translate(0) scale(0.35); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+}
+#uur1 {
+  animation: steam1 3s ease-out infinite;
+  animation: steam1 3s ease-out infinite;
+}
+#uur3 {
+  animation: steam1 3s ease-out 1s infinite;
+  animation: steam1 3s ease-out 1s infinite;
+}
+#uur {
+  animation: steam2 3s ease-out 0.5s infinite;
+  animation: steam2 3s ease-out 0.5s infinite;
+}
+
+#uur4 {
+  animation: steam2 3s ease-out 1.5s infinite;
+  animation: steam2 3s ease-out 1.5s infinite;
+}
+
+
 /* keyframes */
 @keyframes loading {
   0% {
@@ -286,10 +383,10 @@ ul {
 }
 @keyframes colors3 {
   0% {
-    background: linear-gradient(90deg, #e66465, #9198e5);
+    background: linear-gradient(-90deg, #e66465, #9198e5);
   }
   50% {
-    background: linear-gradient(-90deg, #e66465, #9198e5);
+    background: linear-gradient(90deg, #e66465, #9198e5);
   }
   100% {
     background: linear-gradient(-90deg, #e66465, #9198e5);
@@ -297,13 +394,34 @@ ul {
 }
 @keyframes colors4 {
   0% {
-    background: linear-gradient(-90deg, #e66465, #9198e5);
-  }
-  50% {
     background: linear-gradient(90deg, #e66465, #9198e5);
   }
-  100% {
+  50% {
     background: linear-gradient(-90deg, #e66465, #9198e5);
+  }
+  100% {
+    background: linear-gradient(90deg, #e66465, #9198e5);
+  }
+}
+
+@keyframes durschange {
+  0% {
+    background: lightblue
+  }
+  20% {
+    background: plum
+  }
+  40% {
+    background: lightseagreen
+  }
+  60% {
+    background: lightgoldenrodyellow
+  }
+  80% {
+    background: peru
+  }
+  100% {
+    background: pink;
   }
 }
 
