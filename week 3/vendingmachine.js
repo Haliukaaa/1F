@@ -1,34 +1,3 @@
-// Wending machine
-// Baraanuud
-// 1. Cola 1200
-// 2. Sprite 1500
-// 3. Alpen gold 2000
-// 4. Suu 2200
-// 5. Talh 1000
-// 6. Zairmag 500
-// 7. Bohi 150
-// 7. Arhi 15000
-// Garaas avj boloh devsgertuud
-// 1. 5000
-// 2. 10000
-// 3. 20000
-// Hariult uguh devsgert
-// 1. 50
-// 2. 100
-// 3. 500
-// 4. 1000
-// 5. 5000
-// 6. 10000
-// Ajillagaa
-// 1. Hereglegch avah yma songono
-// 2. Mungu hiine.
-//  1. Avah devsgertuudees uurig avahgue
-//  2. Avah ymnaas baga devsgert avahgue
-// 3. Hariult bodno
-//  1. Hariulah niit dung bodno
-//  2. Ymar2 devsgert tgd hden sh uguhig bodno. (Nemelt)
-
-
 let product = window.prompt("Та авахыг хүссэн бараагаа гаргана уу. \n 1. coke 1200 \n 2. sprite 1500 \n 3. alpen gold 2000 \n 4. milk 2200 \n 5. bread 1000 \n 6. icecream 500 \n 7. gum 150 \n 8. alcohol 15000");
 switch(product) {
     case '1':
@@ -75,10 +44,47 @@ switch (money) {
         window.alert("Та зөвхөн 5000, 10000, 20000 төгрөгийн дэвсгэрт оруулна уу.");
 };
 
-let change = money - product;
+let change = (money, product) => {
+    change = money - product;
+};
+change(money, product);
+
 
 if (product < money) {
     window.alert("Гүйлгээ амжилттай. Таны хариулт: " + change);
 } else if (product > money) {
     window.alert("Үлдэгдэл хүрэлцэхгүй байна. Та дараа дахин оролдоно уу!!");
 };
+
+changeCalc(change)
+function changeCalc (change) {
+    let tenK = Math.floor(change/10000);
+    change = change % 10000;
+
+    let fiveK = Math.floor(change/5000);
+    change = change % 5000;
+
+    let oneK = Math.floor(change/1000);
+    change = change % 1000;
+
+    let fiveHundred = Math.floor(change/500);
+    change = change % 500;
+
+    let oneHundred = Math.floor(change/100);
+    change = change % 100;
+
+    let fifty = Math.floor(change/50);
+    change = change % 50;
+    return {
+        tenK: tenK,
+        fiveK: fiveK,
+        oneK: oneK,
+        fiveHundred: fiveHundred,
+        oneHundred: oneHundred,
+        fifty: fifty
+    }
+};
+let result = changeCalc(change);
+window.alert(
+  `10000₮-ийн дэвсгэрт: ${result.tenK}\n5000₮-ийн дэвсгэрт: ${result.fiveK}\n1000₮-ийн дэвсгэрт: ${result.oneK}\n500₮-ийн дэвсгэрт: ${result.fiveHundred}\n100₮-ийн дэвсгэрт: ${result.oneHundred}\n50₮-ийн дэвсгэрт: ${result.fifty}`
+);
