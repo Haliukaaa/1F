@@ -37,27 +37,3 @@ function calculate(calc, n1, n2) {
 };
 calculate(calc, n1, n2);
 
-
-// let multiply = (n1, n2) => {
-//   return window.alert("Үржих: " + (n1 * n2));
-// };
-
-// let divide = (n1, n2) => {
-//     window.alert("Хуваах: " + (n1 / n2));
-// };
-
-// let add = (n1, n2) => {
-//     window.alert("Нэмэх: " + (n1 += n2));
-// };
-
-// let minus = (n1, n2) => {
-//     window.alert("Хасах: " + (n1 - n2));
-// };
-// let percentage = (n1, n2) => {
-//     window.alert("Хувь олох: " + (n1/100) + ", " + (n2/100));
-// };
-// multiply(n1, n2);
-// divide(n1, n2);
-// add(n1, n2);
-// minus(n1, n2);
-// percentage(n1, n2)

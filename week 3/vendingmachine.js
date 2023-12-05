@@ -49,15 +49,16 @@ let change = (money, product) => {
 };
 change(money, product);
 
-
-if (product < money) {
+function changeCalculate(product, money) {
+  if (product < money) {
     window.alert("Гүйлгээ амжилттай. Таны хариулт: " + change);
-} else if (product > money) {
+  } else if (product > money) {
     window.alert("Үлдэгдэл хүрэлцэхгүй байна. Та дараа дахин оролдоно уу!!");
+  };
 };
+changeCalculate(product, money)
 
-changeCalc(change)
-function changeCalc (change) {
+function changeBillCount (change) {
     let tenK = Math.floor(change/10000);
     change = change % 10000;
 
@@ -84,7 +85,7 @@ function changeCalc (change) {
         fifty: fifty
     }
 };
-let result = changeCalc(change);
+let result = changeBillCount(change);
 window.alert(
   `10000₮-ийн дэвсгэрт: ${result.tenK}\n5000₮-ийн дэвсгэрт: ${result.fiveK}\n1000₮-ийн дэвсгэрт: ${result.oneK}\n500₮-ийн дэвсгэрт: ${result.fiveHundred}\n100₮-ийн дэвсгэрт: ${result.oneHundred}\n50₮-ийн дэвсгэрт: ${result.fifty}`
 );
