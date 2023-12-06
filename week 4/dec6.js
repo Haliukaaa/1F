@@ -1,4 +1,4 @@
-let randomNumber = 56; // Set this to any number you want
+let randomNumber = 5; 
 let i = 0;
 
 if (randomNumber > 100) {
