@@ -1,4 +1,4 @@
-let a = 200;
+let a = window.prompt("Та секундын тоо оруулна уу: ");
 
 function secondConverter(n1) {
     minute = Math.floor(n1/60);

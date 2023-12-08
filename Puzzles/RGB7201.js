@@ -1,0 +1,1 @@
+let string = window.alert("IOI");
