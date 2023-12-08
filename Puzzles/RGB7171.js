@@ -1,3 +1,7 @@
+// YERUUSUU BODOJ CHADKU BNAAAAAAAAAAA
+
+
+
 let floors = Number(window.prompt("Та давхрын тоог оруулна уу."));
 let orts = Number(window.prompt("Та орцны тоог оруулна уу."));
 let doors = Number(window.prompt("Та нэг давхарт оногдох хаалганы тоог оруулна уу."));
