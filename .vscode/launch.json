@@ -1,0 +1,21 @@
+let number = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let firstDigit;
+
+if (number > Math.pow(10, 6)) {
+    console.log("Уучлаарай, та бага тоо оруулна уу.");
+    debugger
+} else if (number >= 10) {
+    firstDigit = Math.floor(number / 10);
+} else if (number >= 100) {
+    firstDigit = Math.floor(number / 100);
+} else if (number >= 1000) {
+    firstDigit = Math.floor(number / 1000);
+} else if (number >= 10000) {
+    firstDigit = Math.floor(number / 10000);
+} else if (number >= 100000) {
+    firstDigit = Math.floor(number / 100000);
+} else if (number >= 1000000) {
+    firstDigit = Math.floor(number / 1000000);
+}
+
+console.log(firstDigit);
