@@ -1,4 +1,4 @@
-let number1 = Number(window.prompt("Та дурын тоогоо оруулна уу:"));
+let number1 = Number(window.prompt("5-аас бага тоонуудын үржвэрийг олъё.\nТа дурын тоогоо оруулна уу:"));
 let number2 = Number(window.prompt("Та дурын тоогоо оруулна уу:"));
 let number3 = Number(window.prompt("Та дурын тоогоо оруулна уу:"));
 let number4 = Number(window.prompt("Та дурын тоогоо оруулна уу:"));

@@ -1,5 +1,5 @@
-let number1 = 45;
-let number2 = 34;
+let number1 = Number( window.prompt("Хоёр тооны хамгийн багыг олъё.\nТа дурын тоогоо оруулна уу:"));
+let number2 = Number(window.prompt("Та дахин нэг тоо оруулна уу:"));
 
 function lesserThanCalc(n1, n2) {
   if (n1 < n2) {

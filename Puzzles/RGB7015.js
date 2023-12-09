@@ -1,4 +1,4 @@
-let hour = 44;
+let hour = Number(window.prompt("Цагийг хоног, цагт хөрвүүлье.\nТа 'цаг'-ийн утгыг оруулна уу:"));
 
 function hourToDaysCalc(n1) {
     let days = Math.floor(n1/24);

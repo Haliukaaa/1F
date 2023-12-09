@@ -1,10 +1,10 @@
-let x = 1;
+let x = Number(window.prompt("y = 3x - 5 тэгшитгэлийг бодож байна.\nТа 'x'-ийн утгыг оруулна уу: "));
 
 function findY(n1) {
-    findY = (3*n1)-5;
-    return findY = findY;
+    let findY = (3*n1)-5;
+    return findY;
 };
 
-findY(x)
+let result = findY(x)
 
-console.log("y=3x-5 Тэгшитгэлийг бодлоо.\n y = " + findY);
+console.log("y = 3x - 5 Тэгшитгэлийг бодлоо.\ny = " + result);

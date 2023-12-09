@@ -1,6 +1,6 @@
-let n1 = Number(window.prompt("Та дурын тоо оруулна уу: "));
-let n2 = Number(window.prompt("Та дурын тоо оруулна уу: "));
-let n3 = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let n1 = Number(window.prompt("Тэгш тоонуудын нийлбэрийг олъё.\nТа дурын 3 тоо оруулна уу: "));
+let n2 = Number(window.prompt("Та дурын 3 тоо оруулна уу: "));
+let n3 = Number(window.prompt("Та дурын 3 тоо оруулна уу: "));
 
 let i = 0;
 

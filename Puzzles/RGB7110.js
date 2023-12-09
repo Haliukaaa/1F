@@ -1,7 +1,7 @@
-let n1 = Number(window.prompt("Та дурын тоо оруулна уу: "));
-let n2 = Number(window.prompt("Та дурын тоо оруулна уу: "));
-let n3 = Number(window.prompt("Та дурын тоо оруулна уу: "));
-let n4 = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let n1 = Number(window.prompt("3-д хуваагдах тоонуудыг олъё.\nТа дурын 4 тоо оруулна уу: "));
+let n2 = Number(window.prompt("Та дурын 4 тоо оруулна уу: "));
+let n3 = Number(window.prompt("Та дурын 4 тоо оруулна уу: "));
+let n4 = Number(window.prompt("Та дурын 4 тоо оруулна уу: "));
 
 function findDivisbleBy3(numbers) {
   let sum = 0;

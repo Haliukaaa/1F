@@ -1,5 +1,5 @@
-let a = 4;
-let b = 6;
+let a = Number(window.prompt("Тэгш өнцөгтийн талбайг олъё.\nТа 'а' талыг оруулна уу."));
+let b = Number(window.prompt("Та 'b' талыг оруулна уу."));
 
 function areaCalc(n1, n2) {
     return n1*n2;

@@ -1,7 +1,7 @@
-let number1 = 45;
-let number2 = 34;
-let number3 = 45;
-let number4 = 1;
+let number1 = Number(window.prompt("Дөрвөн тооны хамгийн багыг олъё.\nТа дурын тоо оруулна уу: "));
+let number2 = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let number3 = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let number4 = Number(window.prompt("Та дурын тоо оруулна уу: "));
 
 function lesserThanCalc(n1, n2, n3, n4) {
   if ((n1 < n2) && (n1 < n3) && (n1 < n4)) {

@@ -1,4 +1,4 @@
-let n1 = Number(window.prompt("Та дурын тоо оруулна уу: "));
+let n1 = Number(window.prompt("Гурван тооны хамгийн ихийг олъё.\nТа дурын тоо оруулна уу: "));
 let n2 = Number(window.prompt("Та дурын тоо оруулна уу: "));
 let n3 = Number(window.prompt("Та дурын тоо оруулна уу: "));
 
