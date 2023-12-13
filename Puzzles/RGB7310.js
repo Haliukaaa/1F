@@ -1,4 +1,4 @@
-let number = 16;
+let number = 12;
 
 function exponentOfTwo(n1) {
   while (n1 > 1) {
