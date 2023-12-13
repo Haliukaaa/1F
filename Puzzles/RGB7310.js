@@ -1,15 +1,13 @@
-let number = 12;
+let number = 81;
 
 function exponentOfTwo(n1) {
   while (n1 > 1) {
     if (n1 % 2 !== 0) {
-      console.log("NO");
-      return false;
+      return console.log("NO");
     }
     n1 = n1 / 2;
   }
-  console.log("YES");
-  return true;
+  return console.log("YES");
 }
 
 let result = exponentOfTwo(number);
