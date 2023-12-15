@@ -13,7 +13,7 @@ function minusLastValue(n1, n2) {
     let i = 0;
     while (i < n1.length -1) {
         result += n1[i];
-        if (i < n1.length -1 -i) {
+        if (i < n1.length -1) {
             result += ",";
         }
         i++;
@@ -23,4 +23,5 @@ function minusLastValue(n1, n2) {
 
 sum = pushAtEnd(arr, add);
 result = minusLastValue(arr, add);
+console.log(sum);
 console.log(result);
