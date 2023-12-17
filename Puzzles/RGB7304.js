@@ -1,17 +1,16 @@
-let number = 23457;
+let number = window.prompt("Та дурын тоо оруулна уу. \nСондгой цифрүүдийн тоог олъё:");
 let sum;
 
 function oddDigitFinder (n1) {
     sum = 0;
-    debugger;
     numStr = n1.toString();
-    for (let i = 0; i <= numStr.length; i++) {
+    for (let i = 0; i < numStr.length; i++) {
         if(numStr[i] % 2 !== 0) {
-            sum += i;
+            sum++;
         }
     }
     return sum;
 }
 
 let result = oddDigitFinder(number);
-console.log(result);
+console.log("Таны оруулсан тооны сондгой цифрүүдийн тоо: " + result);
