@@ -1,0 +1,16 @@
+body {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: paleturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-family: 'Courier New', Courier, monospace;
+}
