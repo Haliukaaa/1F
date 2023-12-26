@@ -28,8 +28,28 @@ body {
 .content {
     cursor:grab;
 }
+.content-icon {
+    flex: 12%;
+}
+.content-text {
+    flex: 76%;
+}
+.content-buttons {
+    flex: 12%;
+}
+.add-card {
+    height: 70%;
+    width: 30%;
+    background-color: #fff;
+}
 
-
+/* DISPLAY STYLES ARE HERE */
+.display-none {
+    display: none !important;
+}
+.display-show {
+    display: flex !important;
+}
 
 /* HOVER EFFECTS ARE HERE */
 .circle-border:hover, .x-button:hover, .add:hover, .edit-button:hover {
@@ -55,6 +75,10 @@ body {
 .icon-width {
     width: 20px;
     height: 20px;
+}
+.width-height-100vp {
+    width: 100vw;
+    height: 100vh;
 }
 
 /* BORDER RADIUS HERE */
@@ -106,6 +130,9 @@ body {
 .bg-grey {
     background-color: #ebecf0;
 }
+.bg-black {
+    background-color: #21212190;
+}
 .grey {
     color: grey;
 }
@@ -118,6 +145,10 @@ body {
 }
 .padding-4 {
     padding: 6% 4%;
+}
+/* MARGIN STYLES ARE HERE */
+.margin-30 {
+    margin: 30px;
 }
 
 /* GAP STYLES HERE */
@@ -137,4 +168,11 @@ body {
 }
 .text-center {
     text-align: center;
+}
+
+/* POSITION STYLES ARE HERE */
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
