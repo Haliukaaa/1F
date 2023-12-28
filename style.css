@@ -1,9 +1,10 @@
 :root {
     --font-size-8: 0.5rem;     /* 8px */
-    --font-size-10: 0.625rem;  /* 10 px */
+    --font-size-10: 0.625rem;  /* 10px */
+    --font-size-14: 0.875rem;  /* 14px*/
     --font-size-16: 1rem;      /* 16px */
+    --font-size-18: 1.125rem;  /* 18px */
     --font-size-24: 1.5rem;    /* 24px */
-    --percent-35: 3rem;     /* 35% */
 }
 * {
     box-sizing: border-box;
@@ -26,7 +27,10 @@ body {
     grid-template-rows: 1fr;
 }
 .content {
-    cursor:grab;
+    cursor: grab;
+}
+.task1 {
+    height: fit-content;
 }
 .content-icon {
     flex: 12%;
@@ -37,10 +41,16 @@ body {
 .content-buttons {
     flex: 12%;
 }
-.add-card {
-    height: 70%;
-    width: 30%;
+.addcard {
+    width: clamp(25%, 400px, 400px);
     background-color: #fff;
+}
+.input {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.textarea {
+    resize: none;
 }
 
 /* DISPLAY STYLES ARE HERE */
@@ -60,7 +70,7 @@ body {
 
 /* SIZES ARE HERE */
 .width-35 {
-    width: var(--percent-35);
+    width: fit-content;
 }
 .width-100 {
     width: 100%;
@@ -82,6 +92,9 @@ body {
 }
 
 /* BORDER RADIUS HERE */
+.radius-4 {
+    border-radius: 4px;
+}
 .radius-7 {
     border-radius: 7px;
 }
@@ -94,6 +107,9 @@ body {
 }
 .grey-border {
     border: 1px solid grey;
+}
+.border-none {
+    border: none;
 }
 
 /* IMAGE STYLES ARE HERE YOO!! */
@@ -130,11 +146,17 @@ body {
 .bg-grey {
     background-color: #ebecf0;
 }
-.bg-black {
+.bg-blackish {
     background-color: #21212190;
+}
+.bg-black {
+    background-color: black;
 }
 .grey {
     color: grey;
+}
+.white {
+    color: white;
 }
 /* PADDING STYLES */
 .padding-2 {
@@ -145,6 +167,12 @@ body {
 }
 .padding-4 {
     padding: 6% 4%;
+}
+.padding-8 {
+    padding: var(--font-size-8);
+}
+.padding-16 {
+    padding: var(--font-size-16)
 }
 /* MARGIN STYLES ARE HERE */
 .margin-30 {
@@ -161,6 +189,9 @@ body {
 .gap-16 {
     gap: var(--font-size-16);
 }
+.gap-24 {
+    gap: var(--font-size-24);
+}
 
 /* TEXT STYLES ARE HEEREEEEE */
 .bold {
@@ -168,6 +199,12 @@ body {
 }
 .text-center {
     text-align: center;
+}
+.font-size-18 {
+    font-size: var(--font-size-18);
+}
+.font-size-24 {
+    font-size: var(--font-size-24)
 }
 
 /* POSITION STYLES ARE HERE */
