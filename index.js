@@ -1,3 +1,24 @@
+function countChildElement() {
+  const container = document.getElementById("todo-contents");
+  let inProgressContents = document.getElementById("inprogress-contents");
+  let stuckContents = document.getElementById("stuck-contents");
+  let doneContents = document.getElementById("done-contents");
+
+  const count = container.childElementCount;
+  const count2 = inProgressContents.childElementCount;
+  const count3 = stuckContents.childElementCount;
+  const count4 = doneContents.childElementCount;
+
+  let titleNumber = document.querySelector(".title-number");
+  let titleNumber2 = document.querySelector(".title-number2");
+  let titleNumber3 = document.querySelector(".title-number3");
+  let titleNumber4 = document.querySelector(".title-number4");
+  titleNumber.textContent = count;
+  titleNumber2.textContent = count2;
+  titleNumber3.textContent = count3;
+  titleNumber4.textContent = count4;
+}
+
 function drag(ev) {
   const task = ev.dataTransfer.setData("text", ev.target.id);
 }
@@ -10,7 +31,14 @@ function drop(ev) {
   ev.preventDefault();
   const taskID = ev.dataTransfer.getData("text");
   const task = document.getElementById(taskID);
-  ev.target.appendChild(task);
+  let target = ev.target;
+  while (target && !target.classList.contains("contents")) {
+    target = target.parentElement;
+  }
+  if (target && target.classList.contains("contents")) {
+    target.appendChild(task);
+  }
+  countChildElement();
 }
 
 let element = document.getElementById("task1");
@@ -34,13 +62,7 @@ const displayNone = () => {
 
 displayNone();
 
-function countChildElement () {
-  const container = document.getElementById("todo-contents");
-  const count = container.childElementCount;
-  const titleNumber = document.querySelector("title-number");
-  titleNumber.textContent = count;
-};
-taskArray = [];
+let taskArray = [];
 
 const render = () => {
   let toDoContents = document.getElementById("todo-contents");
@@ -110,7 +132,7 @@ const render = () => {
 
 render();
 
-let addToDo = () => {
+function addToDo() {
   const titleInputValue = document.getElementById("title").value;
   const descriptionInputValue = document.getElementById("description").value;
   const statusInputValue = document.getElementById("status").value;
@@ -126,7 +148,7 @@ let addToDo = () => {
   };
   taskArray.push(inputObj);
   render();
-};
+}
 
 const deleteWindow = (event) => {
   const xButton = event.currentTarget;

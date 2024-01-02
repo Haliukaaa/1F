@@ -15,16 +15,21 @@
     font-size: 16px;
 }
 body {
-    background-image: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-     background-attachment: fixed;
+    background-attachment: fixed;
     height: 100%;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    width: 1400px;
+}
+.contents {
+    max-height: fit-content;
+    min-height: 30px;
 }
 .content {
     cursor: grab;
@@ -175,8 +180,8 @@ body {
     padding: var(--font-size-16)
 }
 /* MARGIN STYLES ARE HERE */
-.margin-30 {
-    margin: 30px;
+.margin-100-auto {
+    margin: 100px auto;
 }
 
 /* GAP STYLES HERE */
