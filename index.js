@@ -62,6 +62,19 @@ const displayNone = () => {
 
 displayNone();
 
+const emptyTask = () => {
+  let cardTitle = document.getElementById("title");
+  let cardDescription = document.getElementById("description");
+  cardTitle.value = "";
+  cardDescription.value = "";
+};
+
+const closeTask = () => {
+  const container = document.getElementById('add-card-container');
+  container.classList.add('display-none');
+  container.classList.remove("display-show");
+}
+
 let taskArray = [];
 
 const render = () => {
@@ -77,7 +90,7 @@ const render = () => {
 
   taskArray.forEach((el, i) => {
     let taskString = `<div
-              id="todo-${el.title + i}"
+              id="${el.title + i}"
               class="content flex-row space-between bg-white radius-5 padding-4 gap-8"
               draggable="true"
               ondragstart="drag(event)"
@@ -148,17 +161,50 @@ function addToDo() {
   };
   taskArray.push(inputObj);
   render();
+  emptyTask();
+  closeTask();
 }
 
 const deleteWindow = (event) => {
   const xButton = event.currentTarget;
   const contentDiv = xButton.parentElement.parentElement;
-  contentDiv.style.display = "none";
+
+  for (let i = 0; i < taskArray.length; i++) {
+    const taskId = `${taskArray[i].title + i}`;
+
+    if (taskId === contentDiv.id) {
+      taskArray.splice(i, 1);
+      break;
+    }
+  }
+
+  contentDiv.remove();
+  countChildElement();
 };
+
+
+
 
 const toDone = () => {
   const yesButton = document.getElementById("check-to-done");
   const contentDiv = yesButton.parentElement.parentElement;
   const done = document.getElementById("done-contents");
   done.appendChild(contentDiv);
+  countChildElement();
 };
+
+document.getElementById('add-todo').addEventListener('click', function() {
+  document.getElementById('status').value = 'todo';
+});
+
+document.getElementById('add-inprogress').addEventListener('click', function() {
+  document.getElementById('status').value = 'inprogress';
+});
+
+document.getElementById('add-stuck').addEventListener('click', function() {
+  document.getElementById('status').value = 'stuck';
+});
+
+document.getElementById('add-done').addEventListener('click', function() {
+  document.getElementById('status').value = 'done';
+});
