@@ -180,6 +180,7 @@ const deleteWindow = (event) => {
 
   contentDiv.remove();
   countChildElement();
+  render();
 };
 
 
