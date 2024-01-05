@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  /* border: 1px solid black; */
   font-size: 16px;
 }
 body {
@@ -57,6 +56,13 @@ body {
 .textarea {
   resize: none;
 }
+.required {
+  border: 1px solid red !important;
+}
+.required {
+  background-color: rgb(223, 223, 223) !important;
+}
+
 
 /* DISPLAY STYLES ARE HERE */
 .display-none {

@@ -41,7 +41,8 @@ function drop(ev) {
     target.appendChild(task);
     for (let i = 0; i < taskArray.length; i++) {
       if (taskArray[i].title + i === taskID) {
-        taskArray[i].status = target;
+        const status = target.id.replace("-contents", "");
+        taskArray[i].status = status;
         break;
       }
     }
@@ -49,10 +50,7 @@ function drop(ev) {
   countChildElement();
 }
 
-let element = document.getElementById("task1");
-
 let container = document.querySelector(".container");
-
 
 const displayVisible = (status) => {
   let addCardContainer = document.getElementById("add-card-container");
@@ -60,9 +58,6 @@ const displayVisible = (status) => {
 
   document.getElementById("status").value = status;
 };
-
-
-
 
 const displayNone = () => {
   let addCardContainer = document.getElementById("add-card-container");
@@ -109,7 +104,7 @@ const render = () => {
             >
               <!-- CONTENT ICON is here -->
               <div class="content-icon">
-                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone()">
+                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone(event)">
                   <i class="fa-solid fa-check"></i>
                 </div>
               </div>
@@ -133,6 +128,7 @@ const render = () => {
                 </div>
                 <div
                   class="edit-button circle-border flex-center width-height-24 flex"
+                  onclick="editWindow(event)"
                 >
                   <i class="fa-regular fa-pen-to-square"></i>
                 </div>
@@ -160,6 +156,16 @@ render();
 function addToDo() {
   const titleInputValue = document.getElementById("title").value;
   const descriptionInputValue = document.getElementById("description").value;
+
+  const titleInput = document.getElementById("title");
+  const button = document.getElementById('add-task');
+
+  if (titleInputValue.trim() === "" || descriptionInputValue.trim() === "") {
+    alert("Title and description are required!");
+    // button.disabled = true;
+
+    return;
+  }
   const statusInputValue = document.getElementById("status").value;
   const priorityInputValue = document.getElementById("priority").value;
 
@@ -173,8 +179,7 @@ function addToDo() {
   render();
   emptyTask();
   closeTask();
-};
-
+}
 
 const deleteWindow = (event) => {
   const xButton = event.currentTarget;
@@ -208,32 +213,75 @@ const toDone = (event) => {
   countChildElement();
 };
 
+// const editWindow = (event) => {
+//   const editButton = event.currentTarget;
+//   const contentDiv = editButton.parentElement.parentElement;
+//   console.log("Edit window enabled");
+
+//   for (let i = 0; i < taskArray.length; i++) {
+//     const taskId = `${taskArray[i].title + i}`;
+
+//     if (taskId === contentDiv.id) {
+//       const editTitleInput = document.getElementById("edit-title");
+//       const editDescriptionInput = document.getElementById("edit-description");
+//       const editStatusInput = document.getElementById("edit-status");
+//       const editPriorityInput = document.getElementById("edit-priority");
+
+//       editTitleInput.value = taskArray[i].title;
+//       editDescriptionInput.value = taskArray[i].description;
+//       editStatusInput.value = taskArray[i].status;
+//       editPriorityInput.value = taskArray[i].priority;
+
+//       displayEdit();
+
+//       const updateButton = document.getElementById("update-task");
+//       console.log("update buttton working");
+//       updateButton.addEventListener("click", () => {
+//         taskArray[i].title = editTitleInput.value;
+//         taskArray[i].description = editDescriptionInput.value;
+//         taskArray[i].status = editStatusInput.value;
+//         taskArray[i].priority = editPriorityInput.value;
+
+//         closeEdit();
+//         render();
+//       });
+
+//       console.log(editTitleInput.value);
+//     }
+//   }
+
+//   countChildElement();
+// };
+
+
+// function displayEdit() {
+//   let editCardContainer = document.getElementById("edit-card-container");
+//   editCardContainer.classList.add("display-show");
+// }
+
+// function closeEdit() {
+//   let editCardContainer = document.getElementById("edit-card-container");
+//   editCardContainer.classList.remove("display-show");
+// }
+
 
 
 const setStatus = (status) => {
   document.getElementById("status").value = status;
-  taskArray.forEach((task) => {
-    task.status = status;
-  });
-
-  render();
 };
 
-
-document.getElementById("add-todo").addEventListener("click", function () {
+document.getElementById("add-todo").addEventListener("click", () => {
   setStatus("todo");
 });
 
-document
-  .getElementById("add-inprogress")
-  .addEventListener("click", function () {
-    setStatus("inprogress");
-  });
+document.getElementById("add-inprogress").addEventListener("click", () => {
+  setStatus("inprogress");
+});
 
-document.getElementById("add-stuck").addEventListener("click", function () {
+document.getElementById("add-stuck").addEventListener("click", () => {
   setStatus("stuck");
 });
 
-document.getElementById("add-done").addEventListener("click", function () {
+document.getElementById("add-done").addEventListener("click", () => {
   setStatus("done");
 });
