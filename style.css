@@ -29,7 +29,7 @@ body {
 }
 .contents {
   max-height: fit-content;
-  min-height: 30px;
+  min-height: 50px;
 }
 .content {
   cursor: grab;
@@ -148,7 +148,7 @@ body {
 
 /* COLOR STYLES ARE HERE */
 .bg-white {
-  background-color: #fff;
+  background-color: #f8f7f4;
 }
 .bg-grey {
   background-color: #f0efeb;
@@ -160,7 +160,7 @@ body {
   background-color: black;
 }
 .grey {
-  color: grey;
+  color: rgb(137, 137, 137);
 }
 .white {
   color: white;

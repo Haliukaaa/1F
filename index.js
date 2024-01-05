@@ -1,3 +1,5 @@
+let taskArray = [];
+
 function countChildElement() {
   const container = document.getElementById("todo-contents");
   let inProgressContents = document.getElementById("inprogress-contents");
@@ -37,6 +39,12 @@ function drop(ev) {
   }
   if (target && target.classList.contains("contents")) {
     target.appendChild(task);
+    for (let i = 0; i < taskArray.length; i++) {
+      if (taskArray[i].title + i === taskID) {
+        taskArray[i].status = target;
+        break;
+      }
+    }
   }
   countChildElement();
 }
@@ -45,10 +53,16 @@ let element = document.getElementById("task1");
 
 let container = document.querySelector(".container");
 
-const displayVisible = () => {
+
+const displayVisible = (status) => {
   let addCardContainer = document.getElementById("add-card-container");
   addCardContainer.classList.add("display-show");
+
+  document.getElementById("status").value = status;
 };
+
+
+
 
 const displayNone = () => {
   let addCardContainer = document.getElementById("add-card-container");
@@ -70,12 +84,10 @@ const emptyTask = () => {
 };
 
 const closeTask = () => {
-  const container = document.getElementById('add-card-container');
-  container.classList.add('display-none');
+  const container = document.getElementById("add-card-container");
+  container.classList.add("display-none");
   container.classList.remove("display-show");
-}
-
-let taskArray = [];
+};
 
 const render = () => {
   let toDoContents = document.getElementById("todo-contents");
@@ -151,8 +163,6 @@ function addToDo() {
   const statusInputValue = document.getElementById("status").value;
   const priorityInputValue = document.getElementById("priority").value;
 
-  const contents = document.getElementById("todo-contents");
-
   const inputObj = {
     title: titleInputValue,
     description: descriptionInputValue,
@@ -163,7 +173,8 @@ function addToDo() {
   render();
   emptyTask();
   closeTask();
-}
+};
+
 
 const deleteWindow = (event) => {
   const xButton = event.currentTarget;
@@ -183,29 +194,46 @@ const deleteWindow = (event) => {
   render();
 };
 
-
-
-
-const toDone = () => {
-  const yesButton = document.getElementById("check-to-done");
+const toDone = (event) => {
+  const yesButton = event.currentTarget;
   const contentDiv = yesButton.parentElement.parentElement;
   const done = document.getElementById("done-contents");
   done.appendChild(contentDiv);
+  for (let i = 0; i < taskArray.length; i++) {
+    if (taskArray[i].title + i === contentDiv.id) {
+      taskArray[i].status = "done";
+      break;
+    }
+  }
   countChildElement();
 };
 
-document.getElementById('add-todo').addEventListener('click', function() {
-  document.getElementById('status').value = 'todo';
+
+
+const setStatus = (status) => {
+  document.getElementById("status").value = status;
+  taskArray.forEach((task) => {
+    task.status = status;
+  });
+
+  render();
+};
+
+
+document.getElementById("add-todo").addEventListener("click", function () {
+  setStatus("todo");
 });
 
-document.getElementById('add-inprogress').addEventListener('click', function() {
-  document.getElementById('status').value = 'inprogress';
+document
+  .getElementById("add-inprogress")
+  .addEventListener("click", function () {
+    setStatus("inprogress");
+  });
+
+document.getElementById("add-stuck").addEventListener("click", function () {
+  setStatus("stuck");
 });
 
-document.getElementById('add-stuck').addEventListener('click', function() {
-  document.getElementById('status').value = 'stuck';
-});
-
-document.getElementById('add-done').addEventListener('click', function() {
-  document.getElementById('status').value = 'done';
+document.getElementById("add-done").addEventListener("click", function () {
+  setStatus("done");
 });

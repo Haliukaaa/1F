@@ -38,48 +38,10 @@
             ondragover="allowDrop(event)"
             ondrop="drop(event)"
           >
-            <!-- Task is here -->
-            <div
-              id="todo-1"
-              class="content flex-row space-between bg-white radius-5 padding-4 gap-8"
-              draggable="true"
-              ondragstart="drag(event)"
-            >
-              <!-- CONTENT ICON is here -->
-              <div class="content-icon">
-                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone()">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <!-- CONTENT TEXT is here -->
-              <div class="content-text gap-10 flex-column">
-                <div class="content-title bold">Todo</div>
-                <div class="content-p">This is a todo card</div>
-                <div
-                  class="content-button radius-7 width-35 grey-border text-center"
-                >
-                  High
-                </div>
-              </div>
-              <!-- CONTENT BUTTONS are here -->
-              <div class="content-buttons gap-8 flex-column">
-                <div
-                  class="x-button circle-border flex flex-center width-height-24"
-                  onclick="deleteWindow(event)"
-                >
-                  <i class="fa-solid fa-x"></i>
-                </div>
-                <div
-                  class="edit-button circle-border flex-center width-height-24 flex"
-                >
-                  <i class="fa-regular fa-pen-to-square"></i>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- ADD CARD is here -->
-        <div class="add padding-2 radius-5" id="add-todo" onclick="displayVisible()">
+        <div class="add padding-2 radius-5" id="add-todo" onclick="displayVisible('todo')">
           <p>+ Add card</p>
         </div>
       </div>
@@ -105,48 +67,10 @@
             ondragover="allowDrop(event)"
             ondrop="drop(event)"
           >
-            <!-- Task is here -->
-            <div
-              id="inprogress-1"
-              class="content flex-row space-between bg-white radius-5 padding-4 gap-8"
-              draggable="true"
-              ondragstart="drag(event)"
-            >
-              <!-- CONTENT ICON is here -->
-              <div class="content-icon">
-                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone()">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <!-- CONTENT TEXT is here -->
-              <div class="content-text gap-10 flex-column">
-                <div class="content-title bold">Todo</div>
-                <div class="content-p">This is a todo card</div>
-                <div
-                  class="content-button radius-7 width-35 grey-border text-center"
-                >
-                  High
-                </div>
-              </div>
-              <!-- CONTENT BUTTONS are here -->
-              <div class="content-buttons gap-8 flex-column">
-                <div
-                  class="x-button circle-border flex flex-center width-height-24"
-                  onclick="deleteWindow(event)"
-                >
-                  <i class="fa-solid fa-x"></i>
-                </div>
-                <div
-                  class="edit-button circle-border flex-center width-height-24 flex"
-                >
-                  <i class="fa-regular fa-pen-to-square"></i>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- ADD CARD is here -->
-        <div class="add padding-2 radius-5" id="add-inprogress" onclick="displayVisible()">
+        <div class="add padding-2 radius-5" id="add-inprogress" onclick="displayVisible('inprogress')">
           <p>+ Add card</p>
         </div>
       </div>
@@ -172,48 +96,10 @@
             ondragover="allowDrop(event)"
             ondrop="drop(event)"
           >
-            <!-- Task is here -->
-            <div
-              id="stuck-1"
-              class="content flex-row space-between bg-white radius-5 padding-4 gap-8"
-              draggable="true"
-              ondragstart="drag(event)"
-            >
-              <!-- CONTENT ICON is here -->
-              <div class="content-icon">
-                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone()">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <!-- CONTENT TEXT is here -->
-              <div class="content-text gap-10 flex-column">
-                <div class="content-title bold">Todo</div>
-                <div class="content-p">This is a todo card</div>
-                <div
-                  class="content-button radius-7 width-35 grey-border text-center"
-                >
-                  High
-                </div>
-              </div>
-              <!-- CONTENT BUTTONS are here -->
-              <div class="content-buttons gap-8 flex-column">
-                <div
-                  class="x-button circle-border flex flex-center width-height-24"
-                  onclick="deleteWindow(event)"
-                >
-                  <i class="fa-solid fa-x"></i>
-                </div>
-                <div
-                  class="edit-button circle-border flex-center width-height-24 flex"
-                >
-                  <i class="fa-regular fa-pen-to-square"></i>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <!-- ADD CARD is here -->
-        <div class="add padding-2 radius-5" id="add-stuck" onclick="displayVisible()">
+        <div class="add padding-2 radius-5" id="add-stuck" onclick="displayVisible('stuck')">
           <p>+ Add card</p>
         </div>
       </div>
@@ -240,47 +126,11 @@
             ondrop="drop(event)"
           >
             <!-- Task is here -->
-            <div
-              id="done-1"
-              class="content flex-row space-between bg-white radius-5 padding-4 gap-8"
-              draggable="true"
-              ondragstart="drag(event)"
-            >
-              <!-- CONTENT ICON is here -->
-              <div class="content-icon">
-                <div class="circle-border flex flex-center width-height-24" id="check-to-done" onclick="toDone()">
-                  <i class="fa-solid fa-check"></i>
-                </div>
-              </div>
-              <!-- CONTENT TEXT is here -->
-              <div class="content-text gap-10 flex-column">
-                <div class="content-title bold">Todo</div>
-                <div class="content-p">This is a todo card</div>
-                <div
-                  class="content-button radius-7 width-35 grey-border text-center"
-                >
-                  High
-                </div>
-              </div>
-              <!-- CONTENT BUTTONS are here -->
-              <div class="content-buttons gap-8 flex-column">
-                <div
-                  class="x-button circle-border flex flex-center width-height-24"
-                  onclick="deleteWindow(event)"
-                >
-                  <i class="fa-solid fa-x"></i>
-                </div>
-                <div
-                  class="edit-button circle-border flex-center width-height-24 flex"
-                >
-                  <i class="fa-regular fa-pen-to-square"></i>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
         <!-- ADD CARD is here -->
-        <div class="add padding-2 radius-5" id="add-done" onclick="displayVisible()">
+        <div class="add padding-2 radius-5" id="add-done" onclick="displayVisible('done')">
           <p>+ Add card</p>
         </div>
       </div>
@@ -294,11 +144,11 @@
         <h1 class="addcard-hero font-size-24">Add Task</h1>
         <div class="addcard-title">
           <p class="add-cardtitle font-size-18">Title</p>
-          <input type="text" id="title" class="width-100 input padding-8 radius-4" />
+          <input type="text" id="title" required class="width-100 input padding-8 radius-4" />
         </div>
         <div class="addcard-description">
           <p class="description font-size-18">Description</p>
-          <textarea type="text" id="description" class="width-100 input radius-4 padding-8 textarea" cols="50" rows="4"></textarea>
+          <textarea type="text" required id="description" class="width-100 input radius-4 padding-8 textarea" cols="50" rows="4"></textarea>
         </div>
         <div class="addcard-status">
           <p class="status font-size-18">Status</p>
