@@ -62,11 +62,13 @@ const displayVisible = (status) => {
 const displayNone = () => {
   let addCardContainer = document.getElementById("add-card-container");
 
-  window.onclick = function close(event) {
+  function close(event) {
     if (event.target == addCardContainer) {
       addCardContainer.classList.remove("display-show");
     }
-  };
+  }
+
+  window.addEventListener("click", close);
 };
 
 displayNone();
@@ -80,7 +82,6 @@ const emptyTask = () => {
 
 const closeTask = () => {
   const container = document.getElementById("add-card-container");
-  container.classList.add("display-none");
   container.classList.remove("display-show");
 };
 
@@ -128,7 +129,7 @@ const render = () => {
                 </div>
                 <div
                   class="edit-button circle-border flex-center width-height-24 flex"
-                  onclick="editWindow(event)"
+                  onclick="displayEdit(event)"
                 >
                   <i class="fa-regular fa-pen-to-square"></i>
                 </div>
@@ -158,11 +159,10 @@ function addToDo() {
   const descriptionInputValue = document.getElementById("description").value;
 
   const titleInput = document.getElementById("title");
-  const button = document.getElementById('add-task');
+  const button = document.getElementById("add-task");
 
   if (titleInputValue.trim() === "" || descriptionInputValue.trim() === "") {
     alert("Title and description are required!");
-    // button.disabled = true;
 
     return;
   }
@@ -213,58 +213,60 @@ const toDone = (event) => {
   countChildElement();
 };
 
-// const editWindow = (event) => {
-//   const editButton = event.currentTarget;
-//   const contentDiv = editButton.parentElement.parentElement;
-//   console.log("Edit window enabled");
+function updateTask() {
+  const editTitleInput = document.getElementById("edit-title");
+  const editDescriptionInput = document.getElementById("edit-description");
+  const editStatusInput = document.getElementById("edit-status");
+  const editPriorityInput = document.getElementById("edit-priority");
 
-//   for (let i = 0; i < taskArray.length; i++) {
-//     const taskId = `${taskArray[i].title + i}`;
+  for (let i = 0; i < taskArray.length; i++) {
+    taskArray[i].title = editTitleInput.value;
+    taskArray[i].description = editDescriptionInput.value;
+    taskArray[i].status = editStatusInput.value;
+    taskArray[i].priority = editPriorityInput.value;
+  }
 
-//     if (taskId === contentDiv.id) {
-//       const editTitleInput = document.getElementById("edit-title");
-//       const editDescriptionInput = document.getElementById("edit-description");
-//       const editStatusInput = document.getElementById("edit-status");
-//       const editPriorityInput = document.getElementById("edit-priority");
+  closeEdit();
+  render();
+  emptyTask();
+  countChildElement();
+}
 
-//       editTitleInput.value = taskArray[i].title;
-//       editDescriptionInput.value = taskArray[i].description;
-//       editStatusInput.value = taskArray[i].status;
-//       editPriorityInput.value = taskArray[i].priority;
+const updateButton = document.getElementById("update-task");
+updateButton.addEventListener("click", updateTask);
 
-//       displayEdit();
+function editWindow(event) {
+  const editButton = event.currentTarget;
+  const contentDiv = editButton.parentElement.parentElement;
 
-//       const updateButton = document.getElementById("update-task");
-//       console.log("update buttton working");
-//       updateButton.addEventListener("click", () => {
-//         taskArray[i].title = editTitleInput.value;
-//         taskArray[i].description = editDescriptionInput.value;
-//         taskArray[i].status = editStatusInput.value;
-//         taskArray[i].priority = editPriorityInput.value;
+  for (let i = 0; i < taskArray.length; i++) {
+    const taskId = `${taskArray[i].title + i}`;
 
-//         closeEdit();
-//         render();
-//       });
+    if (taskId === contentDiv.id) {
+      const editTitleInput = document.getElementById("edit-title");
+      const editDescriptionInput = document.getElementById("edit-description");
+      const editStatusInput = document.getElementById("edit-status");
+      const editPriorityInput = document.getElementById("edit-priority");
 
-//       console.log(editTitleInput.value);
-//     }
-//   }
+      editTitleInput.value = taskArray[i].title;
+      editDescriptionInput.value = taskArray[i].description;
+      editStatusInput.value = taskArray[i].status;
+    }
+  }
+}
 
-//   countChildElement();
-// };
+const displayEdit = (event) => {
+  let editCardContainer = document.getElementById("edit-card-container");
+  editCardContainer.classList.add("display-show");
+  editWindow(event);
+};
 
+function closeEdit() {
+  const container = document.getElementById("edit-card-container");
+  container.classList.remove("display-show");
+}
 
-// function displayEdit() {
-//   let editCardContainer = document.getElementById("edit-card-container");
-//   editCardContainer.classList.add("display-show");
-// }
-
-// function closeEdit() {
-//   let editCardContainer = document.getElementById("edit-card-container");
-//   editCardContainer.classList.remove("display-show");
-// }
-
-
+closeEdit();
 
 const setStatus = (status) => {
   document.getElementById("status").value = status;

@@ -161,11 +161,10 @@
         </div>
         <div class="addcard-priority">
           <p class="priority font-size-18">Priority</p>
-          <select id="priority" name="priority" id="priority" class="width-100 input padding-8 radius-4">
+          <select id="priority" name="priority" class="width-100 input padding-8 radius-4">
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
-            <button class="add-task" id="add-task">Add task</button>
           </select>
         </div>
         <button onclick="addToDo()" class="white bg-black border-none radius-4 padding-8 font-size-18">Add Task</button>
@@ -173,20 +172,20 @@
     </div>
     <!-- EDIT TASK IS HERE -->
     <div
-      class="addcard-container bg-blackish width-height-100vp absolute flex flex-center display-none"
+      class="editcard-container bg-blackish width-height-100vp absolute flex flex-center display-none"
       id="edit-card-container"
     >
       <div class="addcard radius-7 flex-column gap-24 padding-16" id="modal">
-        <h1 class="addcard-hero font-size-24">Add Task</h1>
-        <div class="addcard-title">
+        <h1 class="editcard-hero font-size-24">Edit Task</h1>
+        <div class="editcard-title">
           <p class="add-cardtitle font-size-18">Title</p>
-          <input type="text" id="edit-title" required autocomplete="off" class="width-100 input padding-8 radius-4" />
+          <input type="text" id="edit-title" autocomplete="off" class="width-100 input padding-8 radius-4" />
         </div>
-        <div class="addcard-description">
+        <div class="editcard-description">
           <p class="description font-size-18">Description</p>
-          <textarea type="text" required autocomplete="off" id="edit-description" class="width-100 input radius-4 padding-8 textarea" cols="50" rows="4"></textarea>
+          <textarea type="text" id="edit-description" autocomplete="off" class="width-100 input radius-4 padding-8 textarea" cols="50" rows="4"></textarea>
         </div>
-        <div class="addcard-status">
+        <div class="editcard-status">
           <p class="status font-size-18">Status</p>
           <select name="status" id="edit-status" class="width-100 input radius-4 padding-8">
             <option value="todo" id="status-todo">To do</option>
@@ -197,14 +196,13 @@
         </div>
         <div class="addcard-priority">
           <p class="priority font-size-18">Priority</p>
-          <select id="priority" name="priority" id="edit-priority" class="width-100 input padding-8 radius-4">
+          <select name="priority" id="edit-priority" class="width-100 input padding-8 radius-4">
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
-            <button class="add-task" id="update-task">Update task</button>
           </select>
         </div>
-        <button onclick="addToDo()" class="white bg-black border-none radius-4 padding-8 font-size-18">Add Task</button>
+        <button onclick="updateTask()" class="white bg-black border-none radius-4 padding-8 font-size-18" id="update-task">Update Task</button>
       </div>
     </div>
     <script src="./index.js"></script>
