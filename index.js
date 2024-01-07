@@ -219,11 +219,18 @@ function updateTask() {
   const editStatusInput = document.getElementById("edit-status");
   const editPriorityInput = document.getElementById("edit-priority");
 
+  const editedTaskId = document.querySelector(".edit-button")
+    .parentElement.parentElement.id;
+
   for (let i = 0; i < taskArray.length; i++) {
-    taskArray[i].title = editTitleInput.value;
-    taskArray[i].description = editDescriptionInput.value;
-    taskArray[i].status = editStatusInput.value;
-    taskArray[i].priority = editPriorityInput.value;
+    const taskId = `${taskArray[i].title + i}`;
+
+    if (taskId === editedTaskId) {
+      taskArray[i].title = editTitleInput.value;
+      taskArray[i].description = editDescriptionInput.value;
+      taskArray[i].status = editStatusInput.value;
+      taskArray[i].priority = editPriorityInput.value;
+    }
   }
 
   closeEdit();
@@ -231,6 +238,7 @@ function updateTask() {
   emptyTask();
   countChildElement();
 }
+
 
 const updateButton = document.getElementById("update-task");
 updateButton.addEventListener("click", updateTask);
