@@ -259,6 +259,7 @@ function editWindow(event) {
       editTitleInput.value = taskArray[i].title;
       editDescriptionInput.value = taskArray[i].description;
       editStatusInput.value = taskArray[i].status;
+      editPriorityInput.value = taskArray[i].priority;
     }
   }
 }
@@ -268,6 +269,20 @@ const displayEdit = (event) => {
   editCardContainer.classList.add("display-show");
   editWindow(event);
 };
+
+const displayEditNone = () => {
+  let editCardContainer = document.getElementById("edit-card-container");
+
+  function close(event) {
+    if (event.target == editCardContainer) {
+      editCardContainer.classList.remove("display-show");
+    }
+  }
+
+  window.addEventListener("click", close);
+};
+
+displayEditNone();
 
 function closeEdit() {
   const container = document.getElementById("edit-card-container");
