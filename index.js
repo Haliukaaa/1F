@@ -47,6 +47,8 @@ function drop(ev) {
       }
     }
   }
+  console.log(taskArray[0].status);
+
   countChildElement();
 }
 
@@ -193,7 +195,7 @@ const deleteWindow = (event) => {
       break;
     }
   }
-
+  debugger;
   contentDiv.remove();
   countChildElement();
   render();
@@ -219,8 +221,8 @@ function updateTask() {
   const editStatusInput = document.getElementById("edit-status");
   const editPriorityInput = document.getElementById("edit-priority");
 
-  const editedTaskId = document.querySelector(".edit-button")
-    .parentElement.parentElement.id;
+  const editedTaskId =
+    document.querySelector(".edit-button").parentElement.parentElement.id;
 
   for (let i = 0; i < taskArray.length; i++) {
     const taskId = `${taskArray[i].title + i}`;
@@ -238,7 +240,6 @@ function updateTask() {
   emptyTask();
   countChildElement();
 }
-
 
 const updateButton = document.getElementById("update-task");
 updateButton.addEventListener("click", updateTask);

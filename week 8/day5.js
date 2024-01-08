@@ -8,7 +8,7 @@ let addDay = "5";
 console.log(year, month, day);
 
 const  daysAdder = (year, month, day, addDay) => {
-    let addedYear = 
+    let addedYear = ;
     let addedMonth = addDay%30;
 }
 

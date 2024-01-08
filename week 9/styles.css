@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+.container {
+    margin: 30px 50px;
+}
+.user-profile {
+    width: 300px;
+    height: fit-content;
+}
+.pfp {
+    height: 300px;
+}
+.text-container {
+    height: 200px;
+}
+.icon {
+    left: 85%;
+    top: 30px;
+    font-size: 20px;
+}
+
+
+/* FLEX STYLES */
+
+.flex {
+    display: flex;
+}
+
+.row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+/* BORDER */
+
+.border-radius {
+    border-radius: 10px;
+}
+.border {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.border-top {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* POSITIONS */
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+/* GAP */
+
+
+.gap-10 {
+    gap: 10px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-25 {
+    gap: 25px;
+}
+.gap-50 {
+    gap: 50px;
+}
+
+/* PADDING */
+.padding-30-15 {
+    padding: 30px 15px;
+}
+
+
+/* IMAGES */
+
+.img-100 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXT STYLES */
+
+.bold {
+    font-weight: bold;
+}
+
+/* COLORS */
+.red {
+    color: pink;
+}
