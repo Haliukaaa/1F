@@ -1,5 +1,6 @@
 import React from "react";
 import UserProfile from '@/components/UserProfile'
+import styles from '@/styles/styles.module.css'
 
 const styles = {
   root: {
