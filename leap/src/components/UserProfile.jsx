@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon }  from "@fortawesome/react-fontawesome";
+// import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 let userData = [
   {
@@ -340,15 +340,6 @@ export default function UserProfile() {
               style={{ ...styles.relative }}
               id="icon-container"
             >
-              <FontAwesomeIcon
-                icon={faHeart}
-                style={{
-                  ...styles.absolute,
-                  ...styles.red,
-                  ...styles.icon,
-                }}
-                id="icon"
-              ></FontAwesomeIcon>
             </div>
             <img
               className="profile-img"
