@@ -1,26 +1,21 @@
-import firstName from "@/components/firstName";
+import { useState } from 'react';
 
-const array = [
-  {
-    firstName: "Duluu",
-    score: "100",
-    lastName: "Bill",
-    age: 121212,
-    work: "Pinecone",
-  },
-  {
-    firstName: "Dashka",
-    score: "69",
-    lastName: "Bill",
-    age: 121212,
-    work: "Pinecone",
-  },
-];
+export default function Index() {
 
-export default function Home() {
-  return (
-    <div>
-      <firstName firstName="Duluu" />
-    </div>
-  );
-}
+    const [on, setOn] = useState(true);
+    
+    const handleClick = () => {
+        setOn(!on);
+    };
+    
+
+    if (on) {
+        return (
+            <button style={{ backgroundColor: 'red' }} onClick={handleClick}>OFF</button>
+        );
+    } else {
+        return (
+            <button style={{backgroundColor: 'green'}} onClick={handleClick}>ON</button>
+        )
+    }
+};

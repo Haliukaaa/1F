@@ -1,4 +1,4 @@
-import Name from "@/components/firstName";
+import Name from "@/components/List1";
 
 export default function Home() {
   return (
