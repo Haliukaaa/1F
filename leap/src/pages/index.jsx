@@ -25,8 +25,8 @@ export default function Index() {
 
   return (
     <div>
-      <div>
-        <button style={styles} onClick={handleClick}>
+      <div className="bg-slate-500 py-8">khbjhbhjbkjhbhb
+        <button onClick={handleClick} className="w-20 max-w-3 bg-slate-500">
           {on ? 'ON' : 'OFF'}
         </button>
       </div>
@@ -37,4 +37,4 @@ export default function Index() {
       </div>
     </div>
   );
-}
+} 
