@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-@layer components;
-
-.example {
-  @apply py-2;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
