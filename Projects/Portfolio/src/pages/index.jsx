@@ -6,6 +6,8 @@ export default function Index() {
     <Header/>
     <Profile/>
     <About/>
+    <Skills />
+    <Experience />
   </div>
   );
 }

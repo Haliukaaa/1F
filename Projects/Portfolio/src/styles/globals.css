@@ -5,6 +5,19 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+
+@layer components {
+    .button {
+        @apply py-1 px-5 rounded-xl;
+        background-color: #E5E7EB;
+        color: #4B5563;
+    }
+
+    .padding {
+        @apply px-28 py-24;
+    }
+    p {
+        color: #4B5563;
+    }
 }

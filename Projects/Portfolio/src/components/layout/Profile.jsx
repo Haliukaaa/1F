@@ -1,9 +1,9 @@
 export const Profile = () => {
   return (
-    <div className="flex py-24 px-20">
+    <div className="flex padding">
       <div className="text-container flex flex-col gap-12">
         <div className="introduction">
-          <h1 className="">Hi, I’m Sagar 👋</h1>
+          <h1>Hi, I’m Sagar 👋</h1>
           <p>
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
@@ -148,8 +148,8 @@ export const Profile = () => {
           </svg>
         </div>
       </div>
-      <div className="img-container w-[320px]">
-        <img className=" w-full h-full" src="/profile.jpg" alt="girl with a black hair" />
+      <div className="img-container w-[400px]">
+        <img className="w-full h-full" src="/profile.jpg" alt="girl with a black hair" />
       </div>
     </div>
   );
