@@ -1,7 +1,7 @@
 export const Profile = () => {
   return (
     <div className="flex padding">
-      <div className="text-container flex flex-col gap-12">
+      <div className="flex flex-col gap-12">
         <div className="introduction">
           <h1>Hi, I’m Sagar 👋</h1>
           <p>
