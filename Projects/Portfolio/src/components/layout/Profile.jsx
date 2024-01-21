@@ -1,9 +1,9 @@
 export const Profile = () => {
   return (
-    <div className="flex padding">
+    <section className="flex flex-col-reverse px-4 md:px-5 py-16 md:flex-row lg:px-20 gap-12">
       <div className="flex flex-col gap-12">
-        <div className="introduction">
-          <h1>Hi, I’m Sagar 👋</h1>
+        <div>
+          <h1 className="font-bold text-4xl lg:text-6xl mb-2 lg:mb-4">Hi, I’m Sagar 👋</h1>
           <p>
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
@@ -12,7 +12,7 @@ export const Profile = () => {
             over 7 years, I still love it as if it was something new.
           </p>
         </div>
-        <div className="info">
+        <div>
           <div className="location flex gap-2">
             <div className="icon">
               <svg
@@ -51,7 +51,7 @@ export const Profile = () => {
             <p>Available for new projects</p>
           </div>
         </div>
-        <div className="social flex gap-2">
+        <div className="flex gap-2">
           <svg
             width="24"
             height="24"
@@ -148,9 +148,9 @@ export const Profile = () => {
           </svg>
         </div>
       </div>
-      <div className="img-container w-[400px]">
-        <img className="w-full h-full" src="/profile.jpg" alt="girl with a black hair" />
+      <div className="flex justify-center">
+        <img className="w-[240px] h-[280px] md:min-w-[220px] md:min-h-[280px] lg:min-w-[280px] lg:min-h-[320px] object-cover" src="/profile.jpg" alt="girl with a black hair" />
       </div>
-    </div>
+    </section>
   );
 };

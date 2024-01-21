@@ -94,7 +94,7 @@ export const Header = () => {
             </g>
           </svg>
         </div>
-        <div className="button resume">Resume</div>
+        <div className="button resume">Download CV</div>
       </div>
     </div>
   );

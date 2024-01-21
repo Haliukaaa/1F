@@ -26,19 +26,33 @@ const work = [
 ];
 
 export default function WorkCard() {
-    return (
-      <div className="flex flex-col gap-12 mt-12">
-          {work.map((el) => (
-            <div className="flex shadow rounded-xl">
+  return (
+    <div className="flex flex-col gap-12 mt-12">
+      {work.map((el, index) => (
+        <div className="flex shadow rounded-xl">
+          {index % 2 === 0 ? (
+            <>
+              <TextCard
+                title={el.title}
+                desc={el.desc}
+                buttons={el.buttons}
+                url={el.url}
+              />
+              <ImgCard imgUrl={el.imgUrl} />
+            </>
+          ) : (
+            <>
               <ImgCard imgUrl={el.imgUrl} />
               <TextCard
-                  title={el.title}
-                  desc={el.desc}
-                  buttons={el.buttons}
-                  url={el.url} />
-            </div>
-          ))}
-      </div>
-    );
-  }
-  
+                title={el.title}
+                desc={el.desc}
+                buttons={el.buttons}
+                url={el.url}
+              />
+            </>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}

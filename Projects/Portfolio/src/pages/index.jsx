@@ -1,4 +1,4 @@
-import { Header, About, Contact, Experience, Footer, Profile, Skills, Work } from '../components/layout/index';
+import { Header, About, Contact, Experience, Footer, Profile, Skills, Work, GetInTouch } from '../components/layout/index';
 
 export default function Index() {
   return (
@@ -9,6 +9,8 @@ export default function Index() {
     <Skills />
     <Experience />
     <Work />
+    <GetInTouch/>
+    <Footer/>
   </div>
   );
 }

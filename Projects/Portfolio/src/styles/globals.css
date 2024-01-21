@@ -13,7 +13,6 @@
         background-color: #E5E7EB;
         color: #4B5563;
     }
-
     .padding {
         @apply px-28 py-24;
     }
