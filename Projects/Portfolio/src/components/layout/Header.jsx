@@ -1,4 +1,12 @@
+import useDownloader from 'react-use-downloader';
+
 export const Header = () => {
+  const { download } = useDownloader();
+  const fileUrl =
+  './khaliun_resume.pdf';
+const filename = 'khaliun_resume.pdf';
+
+
   return (
     <div className="navbar flex gap-8 justify-end py-5 px-20">
       <div className="nav-right">
@@ -94,7 +102,7 @@ export const Header = () => {
             </g>
           </svg>
         </div>
-        <div className="button resume">Download CV</div>
+        <div className="button resume" onClick={() => download(fileUrl, filename)}>Download CV</div>
       </div>
     </div>
   );

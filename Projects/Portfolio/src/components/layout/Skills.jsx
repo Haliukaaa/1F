@@ -449,9 +449,9 @@ export const Skills = () => {
     <div className="padding flex flex-col items-center">
       <div className="text flex flex-col items-center gap-4">
         <Button buttonText={"Skills"} />
-        <p>The skills, tools and technologies I am really good at:</p>
+        <p className="text-center text-lg lg:text-xl">The skills, tools and technologies I am really good at:</p>
       </div>
-      <div className="grid grid-cols-8 grid-rows-2 gap-12 mt-12 items-center justify-center">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 lg:grid-rows-2 gap-12 mt-12 items-center justify-center">
         {icons.map((el) => (
           <TechStack logo={el.logo} name={el.name} />
         ))}

@@ -12,9 +12,10 @@
         @apply py-1 px-5 rounded-xl w-fit;
         background-color: #E5E7EB;
         color: #4B5563;
+        font-size: 14px;
     }
     .padding {
-        @apply px-28 py-24;
+        @apply px-4 py-16 lg:py-24 lg:px-20;
     }
     p {
         color: #4B5563;

@@ -40,7 +40,7 @@ export const GetInTouch = () => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-4xl">reachsagarshah@gmail.com</div>
+          <div className="font-bold text-lg lg:text-4xl">reachsagarshah@gmail.com</div>
           <div>
             <svg
               width="32"
@@ -91,7 +91,7 @@ export const GetInTouch = () => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-4xl">+91 8980500565</div>
+          <div className="font-bold text-lg lg:text-4xl">+91 8980500565</div>
           <div>
             <svg
               width="32"
@@ -123,7 +123,7 @@ export const GetInTouch = () => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <p>You may also find me on these platforms!</p>
+        <p className="text-base">You may also find me on these platforms!</p>
         <div className="flex justify-center gap-1">
           <svg
             width="24"

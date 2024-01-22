@@ -1,6 +1,6 @@
 export default function ExperienceCard({logo, title, desc, date}) {
     return(
-        <div className="bg-white flex gap-16 p-8 rounded-xl shadow justify-between">
+        <div className="bg-white flex flex-col sm:flex-row gap-16 p-8 rounded-xl shadow justify-between">
             <div className="img w-28">
                 <img src={logo} alt="" />
             </div>

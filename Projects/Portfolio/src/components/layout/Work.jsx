@@ -6,7 +6,7 @@ export const Work = () => {
       <div className='padding'>
         <div className="text-container">
           <Button buttonText={"Work"}/>
-          <p>Some of the noteworthy projects I have built:</p>
+          <p className='text-center text-lg lg:text-xl'>Some of the noteworthy projects I have built:</p>
         </div>
         <WorkCard/>
       </div>

@@ -25,7 +25,7 @@ export const Experience = () => {
       <div className="padding bg-gray-50">
         <div className="text-container">
           <Button buttonText={"Experience"}/>
-          <p>Here is a quick summary of my most recent experiences:</p>
+          <p className='text-center text-lg lg:text-xl'>Here is a quick summary of my most recent experiences:</p>
         </div>
         <div className="flex flex-col gap-12 mt-12">
           {workExp.map((el) => (

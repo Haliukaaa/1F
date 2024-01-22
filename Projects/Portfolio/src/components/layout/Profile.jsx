@@ -149,7 +149,7 @@ export const Profile = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <img className="w-[240px] h-[280px] md:min-w-[220px] md:min-h-[280px] lg:min-w-[280px] lg:min-h-[320px] object-cover" src="/profile.jpg" alt="girl with a black hair" />
+        <img className="w-[240px] h-[280px] md:min-w-[220px] md:min-h-[280px] lg:min-w-[280px] lg:min-h-[320px] object-cover border-8 border-white" src="/profile.jpg" alt="girl with a black hair" />
       </div>
     </section>
   );
