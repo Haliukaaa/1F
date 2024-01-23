@@ -1,24 +1,37 @@
-import useDownloader from 'react-use-downloader';
+import useDownloader from "react-use-downloader";
+import {useState, useEffect} from 'react';
 
-export const Header = () => {
+export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
   const { download } = useDownloader();
-  const fileUrl =
-  './khaliun_resume.pdf';
-const filename = 'khaliun_resume.pdf';
+  const fileUrl = "./khaliun_resume.pdf";
+  const filename = "khaliun_resume.pdf";
 
+  const [darkMode, setDarkMode] = useState("light");
+
+  useEffect(() => {
+    if(darkMode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode])
+
+  const handleDarkMode = () => {
+    setDarkMode(darkMode === "dark" ? "light" : "dark")
+  };
 
   return (
-    <div className="navbar flex gap-8 justify-end py-5 px-20">
+    <div className="navbar flex gap-8 justify-end py-5 px-20 dark:bg-slate-950">
       <div className="nav-right">
-        <ul className="menu flex gap-4">
-          <li>About</li>
-          <li>Experience</li>
-          <li>Work</li>
-          <li>Contact</li>
+        <ul className="menu flex gap-4"> 
+          <li onClick={handleClick}>About</li>
+          <li onClick={clickExp}>Experience</li>
+          <li onClick={clickWork}>Work</li>
+          <li onClick={clickContact}>Contact</li>
         </ul>
       </div>
-      <div className="nav-left flex gap-3">
-        <div className="toggle">
+      <div className="nav-left flex gap-3" >
+        <div onClick={handleDarkMode}>
           <svg
             width="24"
             height="24"
@@ -102,7 +115,13 @@ const filename = 'khaliun_resume.pdf';
             </g>
           </svg>
         </div>
-        <div className="button resume" onClick={() => download(fileUrl, filename)}>Download CV</div>
+        <div
+          className="button"
+          style={{ backgroundColor: "#111827", color: "#F9FAFB" }}
+          onClick={() => download(fileUrl, filename)}
+        >
+          Download CV
+        </div>
       </div>
     </div>
   );

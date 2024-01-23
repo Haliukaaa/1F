@@ -1,13 +1,13 @@
 import Button from "../ui/Button";
 
-export const GetInTouch = () => {
+export const GetInTouch = ({contactRef}) => {
   return (
-    <div className="padding flex flex-col items-center gap-12 justify-between">
+    <div ref={contactRef} className="padding flex flex-col items-center gap-7 sm:gap-8 md:gap-10 lg:gap-12 justify-between dark:bg-slate-950">
       <div className="flex flex-col gap-4 items-center">
         <Button buttonText={"Get in touch"} />
         <p className="text-xl text-center">
           What’s next? Feel free to reach out to me if you're looking for
-          <br /> a developer, have a query, or simply want to connect.
+          a developer, have a query, or simply want to connect.
         </p>
       </div>
       <div className="flex flex-col gap-4 items-center">

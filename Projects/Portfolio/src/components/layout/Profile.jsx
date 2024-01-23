@@ -1,6 +1,6 @@
 export const Profile = () => {
   return (
-    <section className="flex flex-col-reverse px-4 md:px-5 py-16 md:flex-row lg:px-20 gap-12">
+    <section className="flex flex-col-reverse px-4 md:px-5 py-16 md:flex-row lg:px-20 gap-12 dark:bg-slate-950">
       <div className="flex flex-col gap-12">
         <div>
           <h1 className="font-bold text-4xl lg:text-6xl mb-2 lg:mb-4">Hi, I’m Sagar 👋</h1>
@@ -149,7 +149,7 @@ export const Profile = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <img className="w-[240px] h-[280px] md:min-w-[220px] md:min-h-[280px] lg:min-w-[280px] lg:min-h-[320px] object-cover border-8 border-white" src="/profile.jpg" alt="girl with a black hair" />
+        <img className="w-[240px] h-[280px] md:min-w-[240px] lg:min-w-[280px] lg:min-h-[320px] object-cover border-8 border-white" src="/profile.jpg" alt="girl with a black hair" />
       </div>
     </section>
   );

@@ -446,7 +446,7 @@ const icons = [
 
 export const Skills = () => {
   return (
-    <div className="padding flex flex-col items-center">
+    <div className="padding flex flex-col items-center dark:bg-slate-950">
       <div className="text flex flex-col items-center gap-4">
         <Button buttonText={"Skills"} />
         <p className="text-center text-lg lg:text-xl">The skills, tools and technologies I am really good at:</p>
