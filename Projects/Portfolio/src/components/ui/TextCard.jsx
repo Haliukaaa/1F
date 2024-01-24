@@ -3,8 +3,8 @@ import ButtonsArray from "./ButtonsArray";
 export default function TextCard({ title, desc, buttons, url }) {
   return (
     <div className="p-12 flex flex-col gap-6 justify-between">
-      <h1>{title}</h1>
-      <p>{desc}</p>
+      <h1 className="dark:white-title text-lg lg:text-xl">{title}</h1>
+      <p className="dark:white-text">{desc}</p>
       <ButtonsArray buttons={buttons}></ButtonsArray>
       <a href={url} target="_blank"><svg
         width="36"

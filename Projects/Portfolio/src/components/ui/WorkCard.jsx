@@ -29,28 +29,14 @@ export default function WorkCard() {
   return (
     <div className="flex flex-col gap-12 mt-12">
       {work.map((el, index) => (
-        <div className="flex flex-col md:flex-row shadow rounded-xl">
-          {index % 2 === 0 ? (
-            <>
-              <TextCard
+        <div className="flex flex-col md:flex-row shadow rounded-xl dark:bg-gray-800">
+          <TextCard
                 title={el.title}
                 desc={el.desc}
                 buttons={el.buttons}
                 url={el.url}
               />
-              <ImgCard imgUrl={el.imgUrl} />
-            </>
-          ) : (
-            <>
-              <ImgCard imgUrl={el.imgUrl} />
-              <TextCard
-                title={el.title}
-                desc={el.desc}
-                buttons={el.buttons}
-                url={el.url}
-              />
-            </>
-          )}
+          <ImgCard imgUrl={el.imgUrl} />
         </div>
       ))}
     </div>

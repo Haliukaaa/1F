@@ -3,8 +3,8 @@ export const Profile = () => {
     <section className="flex flex-col-reverse px-4 md:px-5 py-16 md:flex-row lg:px-20 gap-12 dark:bg-slate-950">
       <div className="flex flex-col gap-12">
         <div>
-          <h1 className="font-bold text-4xl lg:text-6xl mb-2 lg:mb-4">Hi, I’m Sagar 👋</h1>
-          <p>
+          <h1 className="font-bold text-4xl lg:text-6xl mb-2 lg:mb-4 dark:white-title">Hi, I’m Sagar 👋</h1>
+          <p className="dark:white-text">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
             experiences that are fast, accessible, visually appealing, and
@@ -42,13 +42,13 @@ export const Profile = () => {
                 </g>
               </svg>
             </div>
-            <p>Ahmedabad, India</p>
+            <p className="dark:white-text">Ahmedabad, India</p>
           </div>
           <div className="offer flex gap-2">
             <div className="flex items-center justify-center w-6">
               <div className="rounded-full w-2 h-2 bg-green-500"></div>
             </div>
-            <p>Available for new projects</p>
+            <p className="dark:white-text">Available for new projects</p>
           </div>
         </div>
         <div className="flex gap-2">

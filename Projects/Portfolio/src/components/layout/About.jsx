@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 export const About = ({ innerRef }) => {
 
   return (
-    <div className="px-4 md:px-5 py-16 lg:px-20 bg-gray-50 flex flex-col">
+    <div className="px-4 md:px-5 py-16 lg:px-20 bg-gray-50 flex flex-col dark:bg-gray-900">
       <div ref={innerRef} className="flex justify-center pb-12">
         <Button buttonText={"About me"}></Button>
       </div>
@@ -16,8 +16,8 @@ export const About = ({ innerRef }) => {
             alt="a vector image of a girl with black hair and a green sweater"
           />
         </div>
-        <div className="text-container flex flex-col items-start gap-[16px] lg:w-1/2">
-          <h1 className="font-bold text-2xl lg:text-3xl">
+        <div className="text-container flex flex-col items-start gap-[16px] lg:w-1/2 *:dark:white-text">
+          <h1 className="font-bold text-2xl lg:text-3xl dark:white-title">
             Curious about me? Here you have it:
           </h1>
           <p>
@@ -49,11 +49,11 @@ export const About = ({ innerRef }) => {
           </p>
           <p>Finally, some quick bits about me.</p>
           <div className="flex gap-10">
-            <div>
+            <div className="*:dark:white-text">
               <p>B.E. in Computer Engineering</p>
               <p>Full time freelancer</p>
             </div>
-            <div>
+            <div className="*:dark:white-text">
               <p>Avid learner</p>
               <p>Aspiring indie hacker</p>
             </div>

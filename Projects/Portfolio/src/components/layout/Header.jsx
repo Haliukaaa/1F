@@ -23,7 +23,7 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
   return (
     <div className="navbar flex gap-8 justify-end py-5 px-20 dark:bg-slate-950">
       <div className="nav-right">
-        <ul className="menu flex gap-4"> 
+        <ul className="menu flex gap-4 *:dark:white-text"> 
           <li onClick={handleClick}>About</li>
           <li onClick={clickExp}>Experience</li>
           <li onClick={clickWork}>Work</li>
@@ -116,7 +116,7 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
           </svg>
         </div>
         <div
-          className="button"
+          className="py-1 px-5 rounded-xl w-fit dark:bg-slate-300 dark:bg-gray-950"
           style={{ backgroundColor: "#111827", color: "#F9FAFB" }}
           onClick={() => download(fileUrl, filename)}
         >

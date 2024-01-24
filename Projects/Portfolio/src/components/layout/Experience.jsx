@@ -22,10 +22,10 @@ const workExp = [
 
 export const Experience = ({expRef}) => {
     return (
-      <div className="padding bg-gray-50">
+      <div className="padding bg-gray-50 dark:bg-gray-900">
         <div ref={expRef} className="text-container">
           <Button buttonText={"Experience"}/>
-          <p className='text-center text-lg lg:text-xl'>Here is a quick summary of my most recent experiences:</p>
+          <p className='text-center text-lg lg:text-xl dark:white-text'>Here is a quick summary of my most recent experiences:</p>
         </div>
         <div className="flex flex-col gap-12 mt-12">
           {workExp.map((el) => (

@@ -5,7 +5,7 @@ export const GetInTouch = ({contactRef}) => {
     <div ref={contactRef} className="padding flex flex-col items-center gap-7 sm:gap-8 md:gap-10 lg:gap-12 justify-between dark:bg-slate-950">
       <div className="flex flex-col gap-4 items-center">
         <Button buttonText={"Get in touch"} />
-        <p className="text-xl text-center">
+        <p className="text-xl text-center dark:white-text">
           What’s next? Feel free to reach out to me if you're looking for
           a developer, have a query, or simply want to connect.
         </p>
@@ -40,7 +40,7 @@ export const GetInTouch = ({contactRef}) => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-lg lg:text-4xl">reachsagarshah@gmail.com</div>
+          <div className="font-bold text-lg lg:text-4xl dark:white-title">reachsagarshah@gmail.com</div>
           <div>
             <svg
               width="32"
@@ -91,7 +91,7 @@ export const GetInTouch = ({contactRef}) => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-lg lg:text-4xl">+91 8980500565</div>
+          <div className="font-bold text-lg lg:text-4xl dark:white-title">+91 8980500565</div>
           <div>
             <svg
               width="32"
@@ -123,7 +123,7 @@ export const GetInTouch = ({contactRef}) => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <p className="text-base">You may also find me on these platforms!</p>
+        <p className="text-base dark:white-text">You may also find me on these platforms!</p>
         <div className="flex justify-center gap-1">
           <svg
             width="24"
