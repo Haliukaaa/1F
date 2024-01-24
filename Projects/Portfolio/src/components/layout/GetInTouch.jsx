@@ -11,14 +11,15 @@ export const GetInTouch = ({contactRef}) => {
         </p>
       </div>
       <div className="flex flex-col gap-4 items-center">
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-3 lg:gap-5 items-center">
           <div>
             <svg
-              width="32"
-              height="32"
+              width="20"
+              height="20"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-[32px] md:h-[32px]"
             >
               <g id="Icon">
                 <path
@@ -40,14 +41,15 @@ export const GetInTouch = ({contactRef}) => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-lg lg:text-4xl dark:white-title">reachsagarshah@gmail.com</div>
+          <div className="font-bold text-base lg:text-4xl dark:white-title">reachsagarshah@gmail.com</div>
           <div>
             <svg
-              width="32"
-              height="32"
+              width="20"
+              height="20"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-[32px] md:h-[32px]"
             >
               <g id="Icon">
                 <path
@@ -70,14 +72,15 @@ export const GetInTouch = ({contactRef}) => {
             </svg>
           </div>
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-3 lg:gap-5 items-center">
           <div>
             <svg
-              width="32"
-              height="32"
+              width="24"
+              height="24"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-[32px] md:h-[32px]"
             >
               <g id="Icon">
                 <path
@@ -91,14 +94,15 @@ export const GetInTouch = ({contactRef}) => {
               </g>
             </svg>
           </div>
-          <div className="font-bold text-lg lg:text-4xl dark:white-title">+91 8980500565</div>
+          <div className="font-bold text-base lg:text-4xl dark:white-title">+91 8980500565</div>
           <div>
             <svg
-              width="32"
-              height="32"
+              width="20"
+              height="20"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-[32px] md:h-[32px]"
             >
               <g id="Icon">
                 <path
@@ -126,8 +130,8 @@ export const GetInTouch = ({contactRef}) => {
         <p className="text-base dark:white-text">You may also find me on these platforms!</p>
         <div className="flex justify-center gap-1">
           <svg
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +156,8 @@ export const GetInTouch = ({contactRef}) => {
             </g>
           </svg>
           <svg
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -170,8 +174,8 @@ export const GetInTouch = ({contactRef}) => {
             </g>
           </svg>
           <svg
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

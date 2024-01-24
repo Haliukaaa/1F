@@ -1,5 +1,6 @@
 import useDownloader from "react-use-downloader";
 import {useState, useEffect} from 'react';
+import Menu from '../ui/Menu';
 
 export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
   const { download } = useDownloader();
@@ -22,7 +23,7 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
 
   return (
     <div className="navbar flex gap-8 justify-end py-5 px-20 dark:bg-slate-950">
-      <div className="nav-right">
+      <div className="nav-right invisible sm:visible">
         <ul className="menu flex gap-4 *:dark:white-text"> 
           <li onClick={handleClick}>About</li>
           <li onClick={clickExp}>Experience</li>
@@ -30,7 +31,7 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
           <li onClick={clickContact}>Contact</li>
         </ul>
       </div>
-      <div className="nav-left flex gap-3" >
+      <div className="nav-left flex gap-3 invisible sm:visible" >
         <div onClick={handleDarkMode}>
           <svg
             width="24"
@@ -123,6 +124,7 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
           Download CV
         </div>
       </div>
+      <Menu/>
     </div>
   );
 };

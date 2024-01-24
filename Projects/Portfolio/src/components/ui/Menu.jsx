@@ -1,0 +1,132 @@
+import { useState } from "react";
+
+export default function Menu() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <div>
+      <div
+        className="menu flex flex-col gap-1 absolute right-2 sm:invisible"
+        onClick={toggleMenu}
+      >
+        <div className="w-[20px] h-[2px] bg-black rounded-sm"></div>
+        <div className="w-[20px] h-[2px] bg-black rounded-sm"></div>
+        <div className="w-[20px] h-[2px] bg-black rounded-sm"></div>
+      </div>
+      {/* idk background */}
+      <div></div>
+      <div className="h-screen w-[80vw] bg-white absolute top-0 right-0 shadow-menu">
+        <div>
+          <div className="logo"></div>
+          <div className="x-button"></div>
+        </div>
+        <div className="border-t-2 p-4 flex flex-col gap-4">
+          <ul className="menu flex flex-col gap-4 *:dark:white-text">
+            <li>About</li>
+            <li>Experience</li>
+            <li>Work</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className="border-t-2 p-4 flex flex-col gap-4">
+          <div className="flex justify-between">
+            <p>Switch Theme</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Icon">
+                <path
+                  id="Vector"
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_2"
+                  d="M12 2V4"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_3"
+                  d="M12 20V22"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_4"
+                  d="M4.92993 4.92999L6.33993 6.33999"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_5"
+                  d="M17.6599 17.66L19.0699 19.07"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_6"
+                  d="M2 12H4"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_7"
+                  d="M20 12H22"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_8"
+                  d="M6.33993 17.66L4.92993 19.07"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_9"
+                  d="M19.0699 4.92999L17.6599 6.33999"
+                  stroke="#4B5563"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            className="py-1 px-5 rounded-xl w-[100%] dark:bg-slate-300 dark:bg-gray-950 text-center"
+            style={{ backgroundColor: "#111827", color: "#F9FAFB" }}
+            onClick={() => download(fileUrl, filename)}
+          >
+            Download CV
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

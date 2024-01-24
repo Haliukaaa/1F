@@ -32,7 +32,7 @@ export default function Index() {
     <div className="container max-w-[1440px]">
       <Header handleClick={handleClick} clickExp={clickExp} clickWork={clickWork} clickContact={clickContact}/>
       <Profile />
-      <About innerRef={innerRef} />
+      <div className=""><About className="max-w-[1440px]" innerRef={innerRef} /></div>
       <Skills />
       <Experience expRef={expRef} />
       <Work workRef={workRef} />
