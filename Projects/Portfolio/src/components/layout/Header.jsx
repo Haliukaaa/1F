@@ -117,14 +117,12 @@ export const Header = ({handleClick, clickExp, clickWork, clickContact}) => {
           </svg>
         </div>
         <div
-          className="py-1 px-5 rounded-xl w-fit dark:bg-slate-300 dark:bg-gray-950"
-          style={{ backgroundColor: "#111827", color: "#F9FAFB" }}
+          className="py-1 px-5 rounded-xl w-fit bg-slate-950 dark:bg-slate-300 dark:text-gray-900 text-gray-50 hover:cursor-pointer"
           onClick={() => download(fileUrl, filename)}
         >
           Download CV
         </div>
       </div>
-      <Menu/>
     </div>
   );
 };

@@ -127,7 +127,7 @@ export const GetInTouch = ({contactRef}) => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <p className="text-base dark:white-text">You may also find me on these platforms!</p>
+        <p className="text-base dark:white-text text-center lg:text-lg">You may also find me on these platforms!</p>
         <div className="flex justify-center gap-1">
           <svg
             width="20"
