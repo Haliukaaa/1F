@@ -1,26 +1,25 @@
 import Button from '../ui/Button';
 import ExperienceCard from '../ui/ExperienceCard';
 
-const workExp = [
-  {logo: "./ssmlogo.png",
-    title: "English Teacher",
-    desc: "Taught buncha spoiled kids",
-    date: "2022-2023"
-  },
-  {logo: "./beautysecrets.png",
-    title: "English Teacher",
-    desc: "Taught buncha spoiled kids",
-    date: "2020-2022"
-  },
-  {logo: "./kempinski.png",
-    title: "English Teacher",
-    desc: "Taught buncha spoiled kids",
-    date: "2019-2020"
-  }
-];
 
-
-export const Experience = ({expRef}) => {
+export const Experience = ({expRef, darkMode}) => {
+  const workExp = [
+    {logo: "./ssmlogo.png",
+      title: "English Teacher",
+      desc: "Taught buncha spoiled kids",
+      date: "2022-2023"
+    },
+    {logo: darkMode === "dark" ? "./beautysecretswhite.png" : "./beautysecrets.png",
+      title: "English Teacher",
+      desc: "Taught buncha spoiled kids",
+      date: "2020-2022"
+    },
+    {logo: darkMode === "dark" ? "./kempinskiwhite.png" : "./kempinski.png",
+      title: "English Teacher",
+      desc: "Taught buncha spoiled kids",
+      date: "2019-2020"
+    }
+  ];
     return (
       <div className="padding bg-gray-50 dark:bg-gray-900">
         <div ref={expRef} className="text-container">

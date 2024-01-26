@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-const Menu = () => {
+
+const Menu = ({download,  handleClick, clickExp, clickWork, clickContact}) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showSideBar, setshowSideBar] = useState(false);
 
@@ -10,6 +11,8 @@ const Menu = () => {
     setTimeout(() => {
       setshowSideBar(!showSideBar);
     }, 10);
+
+    document.body.classList.toggle('menu-open', !showMenu);
   };
 
   const handleClose = () => {
@@ -17,6 +20,8 @@ const Menu = () => {
     setTimeout(() => {
       setShowMenu(!showMenu);
     }, 400);
+
+    document.body.classList.toggle('menu-open', !showMenu);
   };
   return (
     <>
@@ -39,7 +44,7 @@ const Menu = () => {
           ></div>
           {/* Menu - extended */}
           <div
-            className={`h-screen w-[80vw] bg-white absolute top-0 right-0 shadow-menu overflow-hidden ${
+            className={`h-screen w-[80vw] bg-white absolute top-0 right-0 shadow-menu overflow-hidden menu-open ${
               showSideBar ? "translate-x-0" : "translate-x-[100vw]"
             } transition-all duration-300  ease-in-out`}
           >
@@ -92,10 +97,10 @@ const Menu = () => {
             {/* Menu */}
             <div className="border-t-2 p-4 flex flex-col gap-4">
               <ul className="flex flex-col gap-4 *:dark:white-text">
-                <li>About</li>
-                <li>Experience</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li onClick={handleClick}>About</li>
+                <li onClick={clickExp}>Experience</li>
+                <li onClick={clickWork}>Work</li>
+                <li onClick={clickContact}>Contact</li>
               </ul>
             </div>
             <div className="border-t-2 p-4 flex flex-col gap-4">
@@ -188,7 +193,7 @@ const Menu = () => {
               <div
                 className="py-1 px-5 rounded-xl w-[100%] dark:bg-slate-300 dark:bg-gray-950 text-center"
                 style={{ backgroundColor: "#111827", color: "#F9FAFB" }}
-                onClick={() => download(fileUrl, filename)}
+                onClick={download}
               >
                 Download CV
               </div>
