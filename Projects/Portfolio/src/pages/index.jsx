@@ -52,7 +52,9 @@ export default function Home() {
       <Menu fileUrl={fileUrl} filename={filename} download={downloadCV} handleClick={handleClick}
             clickExp={clickExp}
             clickWork={clickWork}
-            clickContact={clickContact}/>
+            clickContact={clickContact}
+            darkMode={darkMode}
+            handleDarkMode={handleDarkMode}/>
       <div className="dark:bg-slate-950">
         <div className="container max-w-screen-xl mx-auto">
           <Header
