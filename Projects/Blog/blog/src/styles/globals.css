@@ -13,4 +13,11 @@ body {
 .text-color {
     color: var(--secondary-600);
 }
+.button {
+    background-color: #4B6BFB;
+    border-radius: 6px;
+    padding: 4px 10px;
+    width: fit-content;
+    color: white;
+}
 
