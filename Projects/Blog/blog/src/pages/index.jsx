@@ -13,7 +13,7 @@ export default function Home() {
   const [filteredArray, setFilteredArray] = useState(articles);
   const [carousel, setCarousel] = useState([]);
   const [trending, setTrending] = useState([]);
-  const [count, setCount] = useState(9);
+  let count = 9;
 
 
   const fetchData = async () => {
@@ -22,8 +22,8 @@ export default function Home() {
       const carousel = await fetch("https://dev.to/api/articles?top=1&per_page=4");
       const trending = await fetch("https://dev.to/api/articles?state=rising&per_page=4");
 
-      const carouselData = await carousel.json();
       const articlesData = await articles.json();
+      const carouselData = await carousel.json();
       const trendingData = await trending.json();
 
       setArticles(articlesData);
@@ -38,19 +38,12 @@ export default function Home() {
 
   useEffect(() => {
     fetchData();
-  }, [count]);
-  
-  useEffect(() => {
-    // Log data when state variables are updated
-    console.log("Articles:", articles);
-    console.log("Carousel:", carousel);
-    console.log("Trending:", trending);
-  }, [articles, carousel, trending]);
+  }, []);
 
   return (
     <div className="container max-w-screen-xl mx-auto">
       <Header />
-      <Carousel carousel={carousel}/>
+      <Carousel articles={carousel}/>
     </div>
   );
 }
