@@ -2,38 +2,57 @@ import { Button } from "../ui/Button";
 import { useState } from "react";
 
 export const Carousel = ({ articles }) => {
-  console.log(articles);
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => {
+    setCurrent((current) => (current === 0 ? articles.length -1 : current -1));
+  };
+
+  const next = () => {
+    setCurrent((current) => (current === articles.length -1 ? 0 : current + 1));
+  };
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] max-w-screen-xl mx-auto">
       {/* Carousel */}
-      <div className="flex">
-      {articles.map((el) => {
-        return (
-          <div className="max-w-[1216px] h-[651px] relative mx-auto">
+      <div className="flex max-w-[1216px] h-[651px] overflow-hidden rounded-xl mx-auto relative">
+        {articles.map((el, index) => (
+          <div
+            key={index}
+            className="transition-transform ease-out duration-500"
+            style={{transform: `translateX(-${current * 100}%)`}}
+          >
             {/* text container */}
-            <div className="absolute bg-white bottom-3 left-3 h-auto z-[1] w-1/2 p-10 rounded-xl border border-slate-200 flex flex-col gap-4">
-              <Button buttonText={el.tag_list[0]} />
-              <h1 className="text-4xl font-semibold">{el.title}</h1>
-              <p className=" text-gray-400">{el.readable_publish_date}</p>
+            <div className="absolute bg-white bottom-3 left-3 min-h-[250px] hover:h-auto z-[1] w-1/2 p-10 rounded-xl border border-slate-200 flex flex-col justify-between">
+              <Button buttonText={el.tag_list[0] || "news"} />
+              <h1 className="text-4xl font-semibold overflow-hidden max-h-[80px] hover:max-h-fit hover:overflow-visible">
+                {el.title}
+              </h1>
+              <p className="text-gray-400">{el.readable_publish_date}</p>
             </div>
             {/* img container */}
-            <div className="rounded-xl overflow-hidden flex relative w-full h-full">
+            <div className="rounded-xl overflow-hidden flex relative">
               {/* shadow */}
               <div className="w-full h-full bg-black absolute bg-opacity-20"></div>
               {/* image */}
-              <div>
-                <img className="w-full h-full object-cover" src={el.cover_image || "./placeholderimg.jpeg"}></img>
+              <div className="rounded-xl">
+                <img
+                  className="max-w-[1216px] h-[651px] rounded-xl object-cover"
+                  src={el.cover_image || "./placeholderimg.jpeg"}
+                  alt={`Slide ${index + 1}`}
+                ></img>
               </div>
             </div>
           </div>
-        );
-      })}
+        ))}
       </div>
       {/* Left and Right buttons */}
       <div className="flex gap-3 max-w-[1216px] justify-end mx-auto mt-3">
         {/* Left */}
-        <div className="border border-red-600 rounded-md p-3 w-10 h-10">
+        <div
+          onClick={prev}
+          className="cursor-pointer border border-gray-600 rounded-md p-3 w-10 h-10"
+        >
           <svg
             width="9"
             height="17"
@@ -51,7 +70,10 @@ export const Carousel = ({ articles }) => {
           </svg>
         </div>
         {/* Right */}
-        <div className="border border-gray-600 rounded-md p-3 w-10 h-10">
+        <div
+          onClick={next}
+          className="cursor-pointer border border-gray-600 rounded-md p-3 w-10 h-10"
+        >
           <svg
             width="9"
             height="17"
