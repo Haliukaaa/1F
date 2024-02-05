@@ -1,22 +1,26 @@
 import { Button } from "../ui/Button";
 import { useState } from "react";
+import { useContext } from "react";
+import { StateContext } from "../utils/Data";
 
-export const Carousel = ({ articles }) => {
+export const Carousel = () => {
+  const {carousel} = useContext(StateContext);
+
   const [current, setCurrent] = useState(0);
 
   const prev = () => {
-    setCurrent((current) => (current === 0 ? articles.length -1 : current -1));
+    setCurrent((current) => (current === 0 ? carousel.length -1 : current -1));
   };
 
   const next = () => {
-    setCurrent((current) => (current === articles.length -1 ? 0 : current + 1));
+    setCurrent((current) => (current === carousel.length -1 ? 0 : current + 1));
   };
 
   return (
     <div className="mt-[100px] max-w-screen-xl mx-auto">
       {/* Carousel */}
       <div className="flex max-w-[1216px] h-[651px] overflow-hidden rounded-xl mx-auto relative">
-        {articles.map((el, index) => (
+        {carousel.map((el, index) => (
           <div
             key={index}
             className="transition-transform ease-out duration-500"
@@ -31,13 +35,13 @@ export const Carousel = ({ articles }) => {
               <p className="text-gray-400">{el.readable_publish_date}</p>
             </div>
             {/* img container */}
-            <div className="rounded-xl overflow-hidden flex relative">
+            <div className="rounded-xl w-[1216px] overflow-hidden flex relative">
               {/* shadow */}
               <div className="w-full h-full bg-black absolute bg-opacity-20"></div>
               {/* image */}
               <div className="rounded-xl">
                 <img
-                  className="max-w-[1216px] h-[651px] rounded-xl object-cover"
+                  className="w-[1216px] h-[651px] rounded-xl object-cover"
                   src={el.cover_image || "./placeholderimg.jpeg"}
                   alt={`Slide ${index + 1}`}
                 ></img>
