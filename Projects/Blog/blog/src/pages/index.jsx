@@ -20,6 +20,9 @@ export default function Home() {
         <Trending/>
         <Articles/>
       </div>
+      <div className="container max-w-screen-xl mx-auto">
+        <Contact />
+      </div>
     </div>
   );
 }

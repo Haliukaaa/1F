@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { StateContext } from "../utils/Data";
 import { Button2 } from "../ui/Button2";
 import { LoadMore } from "../ui/LoadMore";
+import {Title} from '../ui/Title';
 
 export const Articles = () => {
   const { articles } = useContext(StateContext);
@@ -9,7 +10,7 @@ export const Articles = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">Articles</h1>
+      <Title text="Articles"/>
       <div className="flex justify-between mt-10 *:font-bold">
         <ul className="flex gap-4">
           <li className="text-color2">All</li>

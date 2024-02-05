@@ -1,5 +1,13 @@
+import {Title} from '../ui/Title';
+
 export const Contact = () => {
     return(
-        <div>Contact</div>
+        <div>
+            <div>
+                <Title text="About"/>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
     );
 };

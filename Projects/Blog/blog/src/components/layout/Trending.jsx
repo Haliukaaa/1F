@@ -1,6 +1,7 @@
 import { Button } from "../ui/Button";
 import { useContext } from "react";
 import { StateContext } from "../utils/Data";
+import {Title} from '../ui/Title';
 
 export const Trending = () => {
 const {trending} = useContext(StateContext);
@@ -8,7 +9,7 @@ const {trending} = useContext(StateContext);
   return (
     <div className="my-[100px]">
       <div>
-        <h1 className="text-2xl font-bold">Trending</h1>
+        <Title text="Trending"/>
       </div>
       <div className="flex gap-3 mt-10">
         {trending.map((el) => {
