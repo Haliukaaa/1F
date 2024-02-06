@@ -9,7 +9,7 @@ export const Articles = () => {
 
 
   return (
-    <div>
+    <div className="mb-[100px]">
       <Title text="Articles"/>
       <div className="flex justify-between mt-10 *:font-bold">
         <ul className="flex gap-4">
@@ -23,7 +23,7 @@ export const Articles = () => {
         <p className="text-color2">View all</p>
       </div>
       {/* Articles */}
-      <div className="grid grid-cols-3 gap-5 mt-8">
+      <div className="grid grid-cols-3 gap-5 mt-8 mb-10">
         {articles.map((el) => {
           return (
             <div className="flex flex-col rounded-xl border border-slate-200 p-5 gap-7">
@@ -42,7 +42,9 @@ export const Articles = () => {
         })}
       </div>
       {/* Load more */}
+      <div className="flex justify-center">
       <LoadMore buttonText={"Load More"}/>
+      </div>
     </div>
   );
 };
