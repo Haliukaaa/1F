@@ -6,7 +6,12 @@ export const ArticleProvider = ({ children }) => {
   const [filteredArray, setFilteredArray] = useState(articles);
   const [carousel, setCarousel] = useState([]);
   const [trending, setTrending] = useState([]);
-  let count = 9;
+  const [count, setCount] = useState(9);
+
+  const loadMore = () => {
+    setCount(count + 6);
+    console.log("testing");
+  };
 
   const fetchData = async () => {
     try {
@@ -33,9 +38,19 @@ export const ArticleProvider = ({ children }) => {
     }
   };
 
+  const handleSearch = (event) => {
+    const filteredArticles = articles.filter((article => article.title.toLowerCase().includes(event.target.value.toLowerCase())));
+    setFilteredArray(filteredArticles)
+  }
+  
+
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [count]);
 
-  return <StateContext.Provider value={{articles, carousel, trending}}>{children}</StateContext.Provider>;
+  return (
+    <StateContext.Provider value={{ articles, carousel, trending, loadMore, handleSearch, filteredArray, setFilteredArray }}>
+      {children}
+    </StateContext.Provider>
+  );
 };

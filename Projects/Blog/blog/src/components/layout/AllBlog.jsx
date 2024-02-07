@@ -4,10 +4,10 @@ import { StateContext } from "../utils/Data";
 import {Button2} from '../ui/Button2'
 
 export const AllBlog = () => {
-  const { articles } = useContext(StateContext);
+  const { loadMore, filteredArray } = useContext(StateContext);
   return (
     <Link href={{ pathname: "/SinglePost", query: { id: 22222 } }}>
-      {articles.map((el) => {
+      {filteredArray.map((el) => {
         return (
           <div className="flex flex-col rounded-xl border border-slate-200 p-5 gap-7">
             {/* image */}

@@ -1,7 +1,9 @@
 // pages/_app.js
-import "../styles/globals.css"; // Import your global styles
+import "../styles/globals.css";
 import Head from "next/head";
 import { ArticleProvider } from "@/components/utils/Data";
+import {Header} from '../components/layout/Header';
+import {Contact} from '../components/layout/Contact';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,7 +22,9 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <ArticleProvider>
+        <Header/>
         <Component {...pageProps} />
+        <Contact/>
       </ArticleProvider>
     </>
   );

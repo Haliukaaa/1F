@@ -3,8 +3,10 @@ import { Footer } from "../layout/Footer";
 
 export const Contact = () => {
   return (
-    <div>
-      <div className="flex justify-between mt-[100px]">
+    <div className="bg-gray-100">
+      <div className="container max-w-screen-xl mx-auto">
+      <div>
+      <div className="flex justify-between mt-[100px] pt-16">
         {/* info */}
         <div className="w-1/4 flex flex-col gap-7">
           <div>
@@ -131,6 +133,8 @@ export const Contact = () => {
         </div>
       </div>
       <Footer />
+    </div>
+      </div>
     </div>
   );
 };
