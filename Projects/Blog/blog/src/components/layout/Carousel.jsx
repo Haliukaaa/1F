@@ -1,19 +1,29 @@
 import { Button } from "../ui/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { StateContext } from "../utils/Data";
 
 export const Carousel = () => {
-  const {carousel} = useContext(StateContext);
+  const { carousel } = useContext(StateContext);
 
   const [current, setCurrent] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+    }, 3000); 
+
+    return () => clearInterval(interval); 
+  }, [current]); 
+
   const prev = () => {
-    setCurrent((current) => (current === 0 ? carousel.length -1 : current -1));
+    setCurrent((current) => (current === 0 ? carousel.length - 1 : current - 1));
   };
 
   const next = () => {
-    setCurrent((current) => (current === carousel.length -1 ? 0 : current + 1));
+    setCurrent((current) =>
+      current === carousel.length - 1 ? 0 : current + 1
+    );
   };
 
   return (
@@ -24,7 +34,7 @@ export const Carousel = () => {
           <div
             key={index}
             className="transition-transform ease-out duration-500"
-            style={{transform: `translateX(-${current * 100}%)`}}
+            style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {/* text container */}
             <div className="absolute bg-white bottom-3 left-3 min-h-[250px] hover:h-auto z-[1] w-1/2 p-10 rounded-xl border border-slate-200 flex flex-col justify-between">
@@ -68,8 +78,8 @@ export const Carousel = () => {
               id="Icon"
               d="M8.5 16L1 8.5L8.5 1"
               stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -89,8 +99,8 @@ export const Carousel = () => {
               id="Icon"
               d="M1 1L8.5 8.5L1 16"
               stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

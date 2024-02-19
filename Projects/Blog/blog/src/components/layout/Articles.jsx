@@ -28,13 +28,14 @@ export const Articles = () => {
     if (selectedTags.length === 0) {
       return true;
     }
-     return selectedTags.includes(firstTag);
+    return selectedTags.includes(firstTag);
   });
 
   return (
     <div className="mb-[100px]">
       <Title text="Articles" />
       <div className="flex justify-between mt-10 *:font-bold">
+        {/* tags */}
         <ul className="flex gap-4">
           <li className="text-color2" onClick={() => handleTag("all")}>
             All
@@ -87,12 +88,15 @@ export const Articles = () => {
               {/* text container */}
               <div className="flex flex-col justify-between gap-5 flex-1">
                 <div>
-                  <Button2 buttonText={el.tag_list[0] || el.tag_list[1] || "news"} />
+                  <Button2
+                    buttonText={el.tag_list[0] || el.tag_list[1] || "news"}
+                  />
                 </div>
                 <h1 className="font-bold text-2xl">{el.title}</h1>
                 <p className="text-gray-400">{el.readable_publish_date}</p>
               </div>
             </div>
+            // </Link>
           );
         })}
       </div>
