@@ -16,7 +16,6 @@ export default function Home() {
       <div className="container max-w-screen-xl mx-auto">
         <Trending />
         <Articles />
-        {/* <AllBlog /> */}
       </div>
     </div>
   );
